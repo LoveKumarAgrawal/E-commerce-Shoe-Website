@@ -1,0 +1,697 @@
+
+#Womensection-one {
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 94vh;
+    position: relative;
+    /* background-color: rgb(248, 255, 236); */
+}
+
+#Womensection-one .bg-img {
+    /* border: 2px solid red; */
+    background: url("/src/images/bg-img/bg-2.png")no-repeat top left/cover;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(35px 0px 10px rgba(0, 0, 0, 0.15));
+}
+
+#Womensection-one .info {
+    /* border: 2px solid red; */
+    font-family: "Jost", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 90px;
+}
+
+#Womensection-one .info h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+#Womensection-one .info h1 {
+    /* border: 2px solid red; */
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: 25px 0px;
+}
+
+.women-btn {
+    padding: 15px 35px;
+    width: 230px;
+    background: none;
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.women-btn:hover {
+    /* background: rgba(28, 105, 84,1); */
+    background-color: tomato;
+    color: white;
+}
+
+.women-btn-sm {
+    padding: 12px 22px;
+    width: 160px;
+    background: black;
+    color: white;
+    letter-spacing: 0.8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 450;
+    border: none;
+}
+
+.women-btn-sm:hover {
+    background-color: #e16f37;
+    color: white;
+}
+
+/* #Womensection-two css */
+
+#Womensection-two {
+    min-height: 130vh;
+    width: 100vw;
+    /* background-color: rgb(197, 255, 236); */
+}
+
+#Womensection-two .heading {
+    padding: 30px;
+}
+
+#Womensection-two .heading h2 {
+    /* border: 2px solid red; */
+    font-family: "Bree Serif", serif;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 100;
+    padding-bottom: 5px;
+}
+
+#Womensection-two .line {
+    border: 1px solid tomato;
+    border-radius: 1px;
+    width: 130px;
+    margin: auto;
+    animation: linemove 3s ease;
+}
+
+@keyframes linemove {
+    from {
+        transform: translateX(-800px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+#Womensection-two .shoe-container {
+    /* border: 2px solid red; */
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 350px);
+    grid-row-gap: 50px;
+    padding: 35px 40px;
+}
+
+#Womensection-two .shoe-container .shoe-group {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Womensection-two .shoe-container .shoe-item {
+    /* border: 2px solid black; */
+    height: 280px;
+    width: 270px;
+    background-color: #efefef;
+    margin: 0px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    /* cursor: pointer; */
+    /* overflow: hidden; */
+    position: relative;
+    transition: all 0.8s ease;
+}
+
+#Womensection-two .shoe-container .shoe-item img {
+    /* border: 2px solid black; */
+    width: 250px;
+    height: 100%;
+    transition: all 0.8s ease;
+}
+
+#Womensection-two .shoe-group .shoe-item .social-icons {
+    /* border: 2px solid black; */
+    position: absolute;
+    bottom: 15px;
+}
+
+#Womensection-two .shoe-group .shoe-item .social-icons a {
+    /* border: 1px solid #ccc; */
+    border-radius: 50%;
+    display: inline-flex;
+    width: 37px;
+    height: 37px;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px 8px;
+    opacity: 0;
+    transition: all 0.8s ease;
+    background-color: white;
+    /* filter: invert(100%); */
+}
+
+#Womensection-two .shoe-group .shoe-item .social-icons a:hover {
+    background-color: tomato;
+    filter: invert(100%);
+}
+
+
+#Womensection-two .shoe-item:hover .shoe-item-img {
+    transform: scale(1.1);
+}
+
+#Womensection-two .shoe-item:hover .social-icons a {
+    /* border: 4px solid green; */
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+#Womensection-two .shoe-container .shoe-group h3 {
+    font-family: "Bree Serif", serif;
+    font-weight: 100;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+#Womensection-two .shoe-container .shoe-group p {
+    font-family: "Jost", sans-serif;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #e16f37;
+}
+
+#Womensection-two .shoe-container .shoe-group h3:hover {
+    color: #e16f37;
+}
+
+/* #Womensection-three css */
+
+#Womensection-three {
+    /* border: 2px solid red; */
+    height: 380px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+#Womensection-three .box {
+    /* border: 2px solid green; */
+    width: 45%;
+    height: 260px;
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    margin: 0px 25px;
+    position: relative;
+    color: white;
+    padding: 0px 250px 0px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+#Womensection-three .box h3 {
+    font-weight: 400;
+}
+
+#Womensection-three .box h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 45px;
+    margin: 15px 0px;
+}
+
+#Womensection-three .box a {
+    text-decoration: none;
+    color: white;
+    width: 90px;
+    border-bottom: 1px solid white;
+}
+
+#Womensection-three .box a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+
+#Womensection-three .box a h3 {
+    font-weight: 400;
+}
+
+#Womensection-three #box-1::after {
+    background: rgba(0, 0, 0, 0.4) url("/src/images/bg-img/bg-3.webp")no-repeat center center/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#Womensection-three #box-2::after {
+    background: rgba(0, 0, 0, 0.4) url("/src/images/bg-img/bg-4.jpg")no-repeat center center/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* #Womensection-four CSS */
+
+#Womensection-four {
+    background: #ffe6da;
+    width: 100%;
+    height: 350px;
+    font-family: "Jost", sans-serif;
+    display: flex;
+}
+
+#Womensection-four .left {
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Womensection-four .left h1 {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+#Womensection-four .left h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#Womensection-four .left .line {
+    width: 117px;
+    border-bottom: 2px solid #e16f37;
+    margin: 5px 0px;
+}
+
+#Womensection-four .right {
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Womensection-four .right .input-container {
+    /* border: 2px solid green; */
+    display: flex;
+    background-color: white;
+}
+
+#Womensection-four .right input {
+    font-family: "Jost", sans-serif;
+    padding: 15px;
+    padding-right: 12rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #495057;
+    background-color: #fff;
+}
+
+#Womensection-four .right .send {
+    border: 1px solid transparent;
+    padding: 12px;
+    height: 53px;
+    width: 53px;
+    background-color: #1c88c5;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+#Womensection-four .right .send:hover {
+    background-color: white;
+    filter: invert(0%);
+    border: 1px solid black;
+}
+
+
+/* #Womensection-five CSS */
+
+#Womensection-five {
+    /* border: 2px solid red; */
+    /* height: 90%; */
+    height: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    column-gap: 30px;
+    margin-top: 20px;
+    /* margin-bottom: 30px; */
+}
+
+#Womensection-five .left {
+    /* border: 6px solid green; */
+    height: 100%;
+    width: 200%;
+    /* background-color: rgb(188, 255, 233); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+    color: white;
+    padding-top: 100px;
+    position: relative;
+    transition: all 0.4s ease;
+    /* box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.4); */
+}
+
+#Womensection-five .left:hover {
+    /* transform: translateY(-15px); */
+    box-shadow: 6px 15px 28px rgba(0, 0, 0, 0.4);
+}
+
+#Womensection-five .left::after {
+    background: rgba(0, 0, 0, 0.3) url("/src/images/bg-img/bg-7.jpg")no-repeat top center/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* filter: blur(0.8px); */
+    /* opacity: 0.9; */
+}
+
+#Womensection-five .left h3 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#Womensection-five .left h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.8px;
+}
+
+#Womensection-five .left button {
+    font-size: 10px;
+    width: 148px;
+    background-color: #6e2020;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#Womensection-five .left button:hover {
+    background-color: #e16f37;
+    transform: translateY(-10px);
+}
+
+#Womensection-five .right {
+    /* border: 6px solid green; */
+    width: 100%;
+    font-family: "Jost", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Womensection-five .right .box {
+    /* border: 2px solid black; */
+    height: 47%;
+    width: 100%;
+    position: relative;
+    /* background-color: rgb(237, 255, 210); */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 42px;
+    padding-bottom: 50px;
+    transition: all 0.4s ease;
+}
+
+#Womensection-five .right .box:hover {
+    /* transform: translateY(-15px); */
+    /* box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.4); */
+    box-shadow: 6px 15px 28px rgba(0, 0, 0, 0.4);
+}
+
+#Womensection-five .right .box h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#Womensection-five .right .box h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    margin: 10px 0px;
+}
+
+#Womensection-five .right .box button {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    margin-top: 0px;
+    font-size: 13px;
+    width: 130px;
+    padding: 7px 22px;
+    border-radius: 0px;
+    transition: all 0.2s ease;
+}
+
+#Womensection-five .right .box button:hover {
+    background-color: #e16f37;
+    border: none;
+    color: white;
+}
+
+
+#Womensection-five .right #box-1::after {
+    background: rgba(0, 0, 0, 0.3) url("/src/images/bg-img/bg-11.jpg")no-repeat bottom left/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#Womensection-five .right #box-2::after {
+    background: rgba(0, 0, 0, 0.3) url("/src/images/bg-img/bg-12.jpg")no-repeat bottom left/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* #Women-service CSS */
+
+#Women-service {
+    /* border: 4px solid red; */
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 25px;
+    grid-column-gap: 45px;
+}
+
+#Women-service .box {
+    /* border: 2px solid black; */
+    font-family: "Jost", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    padding: 65px;
+}
+
+#Women-service .box img {
+    /* border: 3px solid red; */
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    filter: invert(20%);
+    margin-bottom: 5px;
+}
+
+#Women-service .box h3 {
+    color: #111;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 9px 0px;
+}
+
+#Women-service .box h4 {
+    color: #7a7a7a;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#Women-service .box:hover {
+    box-shadow: 0 15px 25px #00000014;
+    transform: translateY(-10px);
+}
+
+#Women-service #box-1 {
+    background-color: rgb(223, 255, 223);
+}
+
+#Women-service #box-2 {
+    background-color: rgb(255, 224, 255);
+}
+
+#Women-service #box-3 {
+    background-color: rgb(223, 245, 255);
+}
+
+/* #Womensection-six CSS */
+
+#Womensection-six {
+    /* border: 4px solid green; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-rows: 4fr;
+    column-gap: 30px;
+    padding: 15px;
+    padding-bottom: 40px;
+}
+
+#Womensection-six .box {
+    /* border: 1px solid black; */
+    border-bottom: 1px solid #e9e9e9;
+    font-family: "Jost", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 7px 0px;
+}
+
+#Womensection-six .main {
+    /* border: 1px solid green; */
+    margin-bottom: 5px;
+}
+
+#Womensection-six .box .topic {
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#Womensection-six .box.bottom {
+    border: none;
+}
+
+#Womensection-six .box img {
+    /* border: 2px solid #eaeaea; */
+    border: 2px solid #eaeaea;
+    ;
+    /* border-radius: 50%; */
+    height: 130px;
+    width: 130px;
+    padding: 5px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+#Womensection-six .box img:hover {
+    border: none;
+    box-shadow: 0 15px 25px #00000014;
+}
+
+#Womensection-six .box .info a {
+    /* border: 1px solid yellow; */
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#Womensection-six .box .info a:hover {
+    color: #b8920b;
+}
+
+
+#Womensection-six .box .info h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#Womensection-six .box.middle .price {
+    /* border: 1px solid black; */
+    display: inline;
+    text-decoration: line-through;
+}
+
+#Womensection-six .box.middle span {
+    /* border: 1px solid red; */
+    font-weight: 500;
+    font-size: 16px;
+    color: #b8920b;
+}

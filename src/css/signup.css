@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Riot&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+.signupMainContainer{
+    font-family: "Montserrat", sans-serif;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupcontainer {
+    /* border: 7px solid green; */
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    background-color: #fff;
+    position: relative;
+    /*ishke andar position absolute karne se vo ishki ke andar aa jaye*/
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    overflow: hidden;
+}
+
+.signupcontainer a {
+    /* border: 1px solid blue; */
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0px 10px;
+}
+
+.signupcontainer span {
+    font-size: 15px;
+}
+
+.signupcontainer p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.signupcontainer button {
+    background-color: orange;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    /*words ke beach mai gap*/
+    text-transform: uppercase;
+    /*words ko uppercase mai kar dega*/
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.signupcontainer button:hover {
+    background-color: #00a1ff;
+}
+
+.signupcontainer button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.signupcontainer form {
+    /* border: 2px solid red; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.signupcontainer input {
+    /* border: 1px solid yellow; */
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+}
+
+.signupform-container {
+    /* border: 4px solid yellow; */
+    position: absolute;
+    /*dono ek dushre ko colab kar lenge or jo toggle-container hai vo inke piche aa jayega*/
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    /* opacity: 0; */
+}
+
+.signupcontainer.active .sign-in {
+    transform: translateX(100%);
+}
+
+.sign-up {
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.signupcontainer.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;  /*ye ab click karne par right mai jake sign-in ke upar aa jayega*/
+}
+
+.social-icons {
+    /* border: 5px solid purple; */
+    margin: 20px 0;
+}
+
+.social-icons a {
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    margin: 0 3px;
+    display: inline-flex;
+    /*anca tag inline element hai to ush mai height & width set karne ke liyea or flex se ush ko horizontal and vertically center ke liyea*/
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-container {
+    /* border: 5px solid blue; */
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1000;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+}
+
+.signupcontainer.active .toggle-container {
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle {
+    /* border: 3px solid red; */
+    background: linear-gradient(to right, #c33764, #1d2671);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    /*toggle-container ki width 50% hai to ish ko container ke equal kanne ke liyea 200% deni hogi*/
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.signupcontainer.active .toggle {
+    transform: translateX(50%);
+}
+
+.toggle-panel {
+    /* border: 3px solid yellow; */
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left {
+    transform: translateX(-200%);
+}
+
+.signupcontainer.active .toggle-left {
+    transform: translateX(0);
+}
+
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.signupcontainer.active .toggle-right {
+    transform: translateX(200%);
+}
