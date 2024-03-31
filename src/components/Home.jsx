@@ -1,8 +1,6 @@
 import React from 'react'
 import Products from './Home/HomeProducts'
-import HomeCategory from './Home/HomeCategory'
 import HomeProductCompare from './Home/HomeProductCompare'
-import TeamSection from './Home/Team'
 import { Link } from 'react-router-dom'
 import '../css/home.css'
 
@@ -28,12 +26,24 @@ function Home() {
                 </div>
             </div>
             <div id="shoe-category">
-                {HomeCategory.map(category => (
-                    <div className="box" id={category.id} key={category.id}>
-                        <h3>{category.heading}</h3>
-                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt="" /></button>
-                    </div>
-                ))}
+                <div className="box" id="box-1">
+                    <h3>men collections</h3>
+                    <Link to={'/men'} className='navlink'>
+                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt=""/></button>
+                    </Link>
+                </div>
+                <div className="box" id="box-2">
+                    <h3>women collections</h3>
+                    <Link to={'/women'} className='navlink'>
+                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt=""/></button>
+                    </Link>
+                </div>
+                <div className="box" id="box-3">
+                    <h3>sports collections</h3>
+                    <Link to={'/sports'} className='navlink'>
+                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt=""/></button>
+                    </Link>
+                </div>
             </div>
             {/* <div id="section-one">
                 <h2 className="heading">Bestsellers Products</h2>
@@ -70,13 +80,13 @@ function Home() {
                                     <img className="shoe-item-img" src={shoe.image.shoe1} alt={shoe.name} />
                                     <div className="social-icons">
                                         <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                            <img src="/src/images/social-icon-img/menu.svg" alt="" />
+                                            <img className="icon" src="/src/images/social-icon-img/menu.svg" alt="" />
                                         </a>
                                         <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                            <img src="/src/images/social-icon-img/search.svg" alt="" />
+                                            <img className="icon" src="/src/images/social-icon-img/search.svg" alt="" />
                                         </a>
                                         <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                            <img src="/src/images/social-icon-img/like.svg" alt="" />
+                                            <img className="icon" src="/src/images/social-icon-img/like.svg" alt="" />
                                         </a>
                                     </div>
                                 </div>
@@ -87,6 +97,47 @@ function Home() {
                     ))}
                 </div>
             </div>
+            <div id="offer">
+                <div className="box" id="box-1">
+                    <h3>New Collection</h3>
+                    <h1>The Summer Sale Off 50%</h1>
+                    <a href="#section-one" className="heading">
+                        <h3>Shop Now</h3>
+                    </a>
+                </div>
+                <div className="box" id="box-2">
+                    <h3>New Collection</h3>
+                    <h1>The Summer Sale Off 50%</h1>
+                    <a href="#section-one" className="heading">
+                        <h3>Shop Now</h3>
+                    </a>
+                </div>
+            </div>
+
+            <div id="choice">
+                <div className="box" id="box-1">
+                    <img src="../src/images/bg-img/bg-17.webp" alt="" />
+                    <div className="info">
+                        <h2>Running Shoes</h2>
+                        <a href="#">shop now<div className="line"></div></a>
+                    </div>
+                </div>
+                <div className="box" id="box-2">
+                    <img src="../src/images/bg-img/bg-18.webp" alt="" />
+                    <div className="info">
+                        <h2>Basic Collection</h2>
+                        <a href="#">shop now<div className="line"></div></a>
+                    </div>
+                </div>
+                <div className="box" id="box-3">
+                    <img src="../src/images/bg-img/bg-19.webp" alt="" />
+                    <div className="info">
+                        <h2>Sport Shoes</h2>
+                        <a href="#">shop now<div className="line"></div></a>
+                    </div>
+                </div>
+            </div>
+
             <div id="section-two">
                 <div className="bg-container">
                     <div className="bg-img">
@@ -129,28 +180,25 @@ function Home() {
                 <div className="box main" id="box-3">
                     <h2 className="topic">top sale products</h2>
                 </div>
-
-
-
-                {HomeProductCompare.map((shoe) => (
-                    <div className={`box ${shoe.className}`} id={`box-${shoe.id}`} key={shoe.id}>
-                        <img src={shoe.image} alt="" />
+                {HomeProductCompare.map(shoe => (
+                    <div className={`box ${shoe.id === 2 || shoe.id === 5 || shoe.id === 8 ? 'middle' : ''} ${shoe.id >= 10 ? 'bottom' : ''}`} key={shoe.id}>
+                        <img src={shoe.image.shoe1} alt={shoe.name} />
                         <div className="info">
                             <div className="name">
-                                <a href="#">
+                                <Link to={`/shoe/${shoe.id}`}>
                                     <h2>{shoe.name}</h2>
-                                </a>
+                                </Link>
                             </div>
-                            <h2 className="price">{shoe.price}</h2>
-                            {shoe.discountPrice && <>&nbsp;<span>{shoe.discountPrice}</span></>}
+                            <h2 className="price">{shoe.price}</h2> &nbsp;
+                            {shoe.discountedPrice && <span>{shoe.discountedPrice}</span>}
                         </div>
                     </div>
                 ))}
             </div>
 
 
-           
-            
+
+
 
             <div id="instra-container">
                 <div className="heading">

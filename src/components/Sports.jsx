@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Kids() {
+function Sports() {
   return (
     <div>Kids</div>
   )
 }
 
-export default Kids
+export default Sports

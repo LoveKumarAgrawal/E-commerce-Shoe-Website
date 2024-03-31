@@ -1,15 +1,13 @@
 const Compare = [
-    
-{ id: 4, name: "Climacool", price: 20, image: "/src/images/shoes-img/shoe-1.png" },
-{ id: 5, name: "Dynablast", price: 24, discountPrice: 22, image: "/src/images/shoes-img/shoe-2.png" },
-{ id: 6, name: "Women's Quest", price: 22, image: "/src/images/shoes-img/shoe-3.png" },
-{ id: 7, name: "Air Winflo", price: 20, image: "/src/images/shoes-img/shoe-4.png" },
-{ id: 8, name: "Edge Lux", price: 24, discountPrice: 22, image: "/src/images/shoes-img/shoe-5.png" },
-{ id: 9, name: "Revolution", price: 20, image: "/src/images/shoes-img/shoe-6.png" },
-{ id: 10, name: "AlphaBounce", price: 22, image: "/src/images/shoes-img/shoe-7.png" },
-{ id: 11, name: "Fluid Flow", price: 23, discountPrice: 20, image: "/src/images/shoes-img/shoe-8.png" },
-{ id: 12, name: "Gel Excite", price: 20, image: "/src/images/shoes-img/shoe-4.png" }
-
-]
+    { id: 1, name: 'Climacool', price: '₹6400' , image: {shoe1: '/src/images/shoes-img/shoe-1a.png',shoe2: '/src/images/shoes-img/shoe-1b.png',shoe3: '/src/images/shoes-img/shoe-1c.png'}, color: {shoe1: 'white-blue', shoe2: 'white-purple', shoe3: 'white-green'} },
+    { id: 2, name: 'Dynablast', price: '₹6500', discountedPrice: '₹4500' , image: {shoe1: '/src/images/shoes-img/shoe-2a.png',shoe2: '/src/images/shoes-img/shoe-2b.png',shoe3: '/src/images/shoes-img/shoe-2c.png'}, color: {shoe1: 'black', shoe2: 'green', shoe3: 'purple'} },
+    { id: 3, name: "Women's Quest", price: '₹6999', image: {shoe1: '/src/images/shoes-img/shoe-3a.png',shoe2: '/src/images/shoes-img/shoe-3b.png',shoe3: '/src/images/shoes-img/shoe-3c.png'}, color: {shoe1: 'brown', shoe2: 'green', shoe3: 'blue'} },
+    { id: 4, name: 'Air Winflo', price: '₹8900', image: {shoe1: '/src/images/shoes-img/shoe-4a.png',shoe2: '/src/images/shoes-img/shoe-4b.png',shoe3: '/src/images/shoes-img/shoe-4c.png'}, color: {shoe1: 'white-red', shoe2: 'white-purple', shoe3: 'white-pink'} },
+    { id: 5, name: 'Edge Lux', price: '₹8999', image: {shoe1: '/src/images/shoes-img/shoe-5a.png',shoe2: '/src/images/shoes-img/shoe-5b.png',shoe3: '/src/images/shoes-img/shoe-5c.png'}, color: {shoe1: 'skyblue', shoe2: 'green', shoe3: 'dark green'} },
+    { id: 6, name: 'Revolution', price: '₹5900', image: {shoe1: '/src/images/shoes-img/shoe-6a.png',shoe2: '/src/images/shoes-img/shoe-6b.png',shoe3: '/src/images/shoes-img/shoe-6c.png'}, color: {shoe1: 'brown', shoe2: 'red', shoe3: 'green'} },
+    { id: 7, name: 'AlphaBounce', price: '₹4999', image: {shoe1: '/src/images/shoes-img/shoe-7a.png',shoe2: '/src/images/shoes-img/shoe-7b.png',shoe3: '/src/images/shoes-img/shoe-7c.png'}, color: {shoe1: 'white-brown', shoe2: 'white-blue', shoe3: 'white-green'} },
+    { id: 8, name: 'Fluid Flow', price: '₹7999', discountedPrice: '₹5999' , image: {shoe1: '/src/images/shoes-img/shoe-8a.png',shoe2: '/src/images/shoes-img/shoe-8b.png',shoe3: '/src/images/shoes-img/shoe-8c.png'}, color: {shoe1: 'skincolor', shoe2: 'light-green', shoe3: 'baby-pink'} },
+    { id: 9, name: 'Gel Excite', price: '₹8999', image: {shoe1: '/src/images/shoes-img/shoe-4a.png',shoe2: '/src/images/shoes-img/shoe-4b.png',shoe3: '/src/images/shoes-img/shoe-4c.png'}, color: {shoe1: 'white-red', shoe2: 'white-purple', shoe3: 'white-pink'} }
+  ];
 
 export default Compare;

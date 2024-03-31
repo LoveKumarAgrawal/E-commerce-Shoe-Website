@@ -51,7 +51,7 @@ function Nav() {
                             color: isActive
                                 ? "orange"
                                 : "black",
-                        })} to="/kids">Sports</NavLink></li>
+                        })} to="/sports">Sports</NavLink></li>
                         <li><NavLink className="navlink" style={({ isActive }) => ({
                             color: isActive
                                 ? "orange"

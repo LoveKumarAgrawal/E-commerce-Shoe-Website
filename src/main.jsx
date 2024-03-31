@@ -7,7 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './components/Home.jsx'
 import Men from './components/Men.jsx'
 import Women from './components/Women.jsx'
-import Kids from './components/Kids.jsx'
+import Sports from './components/Sports.jsx'
 import Contact from './components/Contact.jsx'
 import Layout from './Layout.jsx'
 import ShoeListing from './components/ShoeListing.jsx'
@@ -34,8 +34,8 @@ const router = createBrowserRouter([
         element:<Women />
       },
       {
-        path:"kids",
-        element:<Kids />
+        path:"sports",
+        element:<Sports />
       },
       {
         path:"contact",
