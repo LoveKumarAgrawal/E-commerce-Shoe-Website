@@ -1,49 +1,3 @@
-// import React from 'react'
-
-// function ShoeListing() {
-//   return (
-//     <div className="full-container">
-//         <div className="container">
-//             <div className="shoes-container">
-//                 <img src="src/images/three-shoe/shoes-1.png" alt="" id="img1" className="ani-1 ani-11"/>
-//                 <img src="src/images/three-shoe/shoes-2.png" alt="" id="img2" className="ani-2 ani-22"/>
-//                 <img src="src/images/three-shoe/shoes-3.png" alt="" id="img3" className="ani-3 ani-33"/>
-//             </div>
-//             <div className="info-container">
-//                 <h2>Women's shoes</h2>
-//                 <h1>NIKE PEGASUS <br/> DZ2539-500</h1>
-//                 <h2>$210</h2>
-//                 <p>Whatever your "why" is for working out, the Metcon 9 makes it all worth it. We improved on the 8 with
-//                     a
-//                     larger Hyperlift plate and added rubber rope wrap. Intended for lifters, trainers and go-getters,
-//                     some
-//                     of the greatest athletes in the world swear by it, and it's still the gold standard that delivers
-//                     day
-//                     after day</p>
-//                 <div className="info-img">
-//                     <img src="src/images/three-shoe/shoes-1.png" alt="" id="hover-img1"/>
-//                     <img src="src/images/three-shoe/shoes-2.png" alt="" id="hover-img2"/>
-//                     <img src="src/images/three-shoe/shoes-3.png" alt="" id="hover-img3"/>
-//                 </div>
-//                 <div className="img-bottom-line" id="img-hover-line"></div>
-//                 <div className="bottom">
-//                     <p className="size">Select Size</p>
-//                     <select name="size" id="shoes-size">
-//                         <option value="8.5" selected> US 8.5</option>
-//                         <option value="8.5" selected> US 9.0</option>
-//                         <option value="8.5" selected> US 9.5</option>
-//                     </select>
-//                     <button className="btn"><img src="img/logo/shopping.svg" alt=""/>Add to Cart</button>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default ShoeListing
-
-
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Products from './Home/HomeProducts';
@@ -178,9 +132,6 @@ function ShoeListing() {
       }
 
     }
-
-    
-
 
   return (
     <div className="full-container">

@@ -20,9 +20,6 @@ function Home() {
                     <Link to={`/shoe/shoe-item2`}>
                         <div id="home-img"></div>
                     </Link>
-                    {/* <a href="shoe.html" target="_blank">
-                        
-                    </a> */}
                 </div>
             </div>
             <div id="shoe-category">
@@ -45,31 +42,6 @@ function Home() {
                     </Link>
                 </div>
             </div>
-            {/* <div id="section-one">
-                <h2 className="heading">Bestsellers Products</h2>
-                <div className="shoe-container">
-                    {HomeProducts.map((shoe) => (
-                        <div className="shoe-group" key={shoe.id}>
-                            <div className="shoe-item" id={shoe.id}>
-                                <img className="shoe-item-img" src={shoe.image} alt={shoe.name} />
-                                <div className="social-icons">
-                                    <a href="#" className="icon">
-                                        <img src="/src/images/social-icon-img/menu.svg" alt="" />
-                                    </a>
-                                    <a href="#" className="icon">
-                                        <img src="/src/images/social-icon-img/search.svg" alt="" />
-                                    </a>
-                                    <a href="#" className="icon">
-                                        <img src="/src/images/social-icon-img/like.svg" alt="" />
-                                    </a>
-                                </div>
-                            </div>
-                            <h3>{shoe.name}</h3>
-                            <p>{shoe.price}</p>
-                        </div>
-                    ))}
-                </div>
-            </div> */}
             <div id="section-one">
                 <h2 className="heading">Bestsellers Products</h2>
                 <div className="shoe-container">
@@ -195,11 +167,6 @@ function Home() {
                     </div>
                 ))}
             </div>
-
-
-
-
-
             <div id="instra-container">
                 <div className="heading">
                     <h2>ShoeSavvy on instagram</h2>
