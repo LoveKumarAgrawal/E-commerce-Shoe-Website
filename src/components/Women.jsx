@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom'
 
 function Women() {
     const [sidebarOpen, setSidebarOpen] = useState(true);
+    const [filterShoe, setFilterShoe] = useState(false);
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
+        setFilterShoe(!filterShoe);
     };
 
     return (
@@ -93,7 +95,7 @@ function Women() {
                     <div className="line"></div>
                 </div>
 
-                <div className="shoe-container" id="shoe-container">
+                <div className={`shoe-container ${filterShoe ? 'filter-shoe' : ''}`} id="shoe-container">
                 {BestSellersProducts.map((shoe) => (
                         <div className="shoe-group" key={shoe.id}>
                             <Link to={`/shoe/${shoe.id}`}>
