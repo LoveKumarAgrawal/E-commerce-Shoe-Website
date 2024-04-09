@@ -59,7 +59,7 @@ function Nav() {
                         })} to="/contact">Contact</NavLink></li>
                     </ul>
                     {authStatus ? <div className="right-nav">
-                    <Link to={'/addtocart'}><img src="/src/images/logo/shopping.svg" alt=""/></Link>    
+                    <Link to={'/addtocart'}><img src="/src/images/logo/shopping.svg" id='cartlogo' alt=""/></Link>    
                     <button onClick={handleLogout} className='logoutbtn'>Logout</button>
                     </div> : <div className="right-nav">
                         <ul>

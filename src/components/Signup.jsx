@@ -93,7 +93,8 @@ function Signup() {
     e.preventDefault()
     try {
       await account.createEmailPasswordSession(loginuser.email, loginuser.password)
-      dispatch(authlogin())
+      const r = await account.get('current')
+      dispatch(authlogin(r.$id))
       loginnavigate("/")
     } catch (error) {
       console.log(error);

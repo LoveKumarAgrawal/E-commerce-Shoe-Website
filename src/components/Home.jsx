@@ -26,24 +26,27 @@ function Home() {
                 <div className="box" id="box-1">
                     <h3>men collections</h3>
                     <Link to={'/men'} className='navlink'>
-                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt=""/></button>
+                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt="" /></button>
                     </Link>
                 </div>
                 <div className="box" id="box-2">
                     <h3>women collections</h3>
                     <Link to={'/women'} className='navlink'>
-                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt=""/></button>
+                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt="" /></button>
                     </Link>
                 </div>
                 <div className="box" id="box-3">
                     <h3>sports collections</h3>
                     <Link to={'/sports'} className='navlink'>
-                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt=""/></button>
+                        <button>Explore All <img src="/src/images/shoe-category/arrow-right.svg" alt="" /></button>
                     </Link>
                 </div>
             </div>
             <div id="section-one">
-                <h2 className="heading">Bestsellers Products</h2>
+                <div className="heading">
+                    <h2>Bestsellers Products</h2>
+                    <div className="line"></div>
+                </div>
                 <div className="shoe-container">
                     {Products.map((shoe) => (
                         <div className="shoe-group" key={shoe.id}>

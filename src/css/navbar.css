@@ -64,21 +64,39 @@ html {
 }
 .right-nav{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .right-nav .logoutbtn{
     border: none;
     margin-left: 12px;
     font-size: 1rem;
-    color: gray;
+    font-family: "Bree Serif", serif;
+    color: rgb(119, 39, 39);
     cursor: pointer;
-    background: transparent;
+    background:transparent;
 }
 .logoutbtn:hover{
     color: black;
 }
 
+.right-nav .signuplink{
+    /* border: 1px solid yellow; */
+    font-family: "Bree Serif", serif;
+    color: rgb(119, 39, 39);
+    cursor: pointer;
+}
+
 .signuplink:hover{
-    color: black;
+    color: rgb(204, 70, 70);
+}
+
+.right-nav #cartlogo{
+    filter: invert(15%);
+    transition: all 0.5s ease;
+}
+.right-nav #cartlogo:hover{
+    transform: rotateY(180deg);
 }
 
 
@@ -96,7 +114,7 @@ html {
 }
 
 .left-nav .logo img {
-    width: 30px;
+    width: 25px;
     margin-left: 6px;
 
 }

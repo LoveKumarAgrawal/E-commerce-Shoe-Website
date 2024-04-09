@@ -3,18 +3,24 @@ import { databases } from '../appwrite/appwriteConfig';
 import '../css/addtocart.css';
 import Navbar from './Nav';
 import conf from '../conf/conf.js';
+import {useSelector} from 'react-redux'
+
 
 function AddToCart() {
   const [products, setProducts] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
 
+  const userId = useSelector(state => state.auth.userData)
+
+  
   useEffect(() => {
     const getProducts = databases.listDocuments(conf.appwriteDatabaseId, conf.appwriteCollectionId);
-
     getProducts.then(
       function (response) {
-        // Initialize quantity to 1 for each product
-        const productsWithQuantity = response.documents.map(product => ({ ...product, quantity: 1 }));
+        const userProducts = response.documents.filter(product => product.userid === userId);
+      
+      // Initialize quantity to 1 for each product
+        const productsWithQuantity = userProducts.map(product => ({ ...product, quantity: 1 }));
         setProducts(productsWithQuantity);
       },
       function (error) {
@@ -59,7 +65,7 @@ function AddToCart() {
   return (
     <>
       <Navbar />
-      <div id="cart-container">
+      {products && <div id="cart-container">
         <div id="cart">
           <div className="top">
             <h1>Shopping Cart</h1>
@@ -68,7 +74,7 @@ function AddToCart() {
           {products.map((product) => (
             <div className="center" key={product.$id}>
               <div className="left">
-                <img src={product.image} alt="" />
+                <img src={product.image} alt="productImage" />
               </div>
               <div className="middle">
                 <h2 id="shoe-name">{product.name}</h2>
@@ -104,7 +110,8 @@ function AddToCart() {
             <h2>Subtotal (<span id="no_of_item">{products.length}</span>&nbsp;items):&nbsp;<span id="total">{subtotal.toFixed(2)}</span></h2>
           </div>
         </div>
-      </div>
+      </div>}
+      
     </>
   );
 }

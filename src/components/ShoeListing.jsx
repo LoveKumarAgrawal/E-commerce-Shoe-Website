@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Products from './Home/HomeProducts';
 import { v4 as uuidv4 } from 'uuid'
-import { databases } from '../appwrite/appwriteConfig'
+import { databases, account } from '../appwrite/appwriteConfig'
 import '../css/shoelisting.css'
 import { useSelector } from 'react-redux';
 import conf from '../conf/conf.js';
@@ -48,7 +48,7 @@ function ShoeListing() {
       img2.classList.remove("ani-2");
       img1.classList.remove("ani-1");
       img3.classList.remove("ani-3");
-      imgLine.style.transform = "translate(47px,-68px)";
+      imgLine.style.transform = "translate(32px,-55px)";
       
       
     });
@@ -63,7 +63,7 @@ function ShoeListing() {
       img2.classList.remove("ani-22");
       img1.classList.remove("ani-11");
       
-      imgLine.style.transform = "translate(214px,-68px)";
+      imgLine.style.transform = "translate(172px,-55px)";
       
       flag = 2;
     });
@@ -78,7 +78,7 @@ function ShoeListing() {
       img2.classList.add("ani-22");
       img1.classList.add("ani-11");
       
-      imgLine.style.transform = "translate(378px,-68px)";
+      imgLine.style.transform = "translate(311px,-55px)";
       flag = 3;
     });
 
@@ -92,7 +92,6 @@ function ShoeListing() {
   const [selectedColor, setSelectedColor] = useState('shoe1');
   const [shoesize, setShoeSize] = useState('8.5');
 
-  console.log(typeof selectedColor);
 
   const handleImageClick = (image, color) => {
     setSelectedImage(image);
@@ -102,9 +101,10 @@ function ShoeListing() {
     setShoeSize(e.target.value);
   };
   
-  console.log(conf.appwriteUrl);
   
   const authStatus = useSelector((state) => state.auth.status)
+  const userId = useSelector(state => state.auth.userData)
+  
   const handleSubmit = (e) => {
       // e.preventDefault()
       // setProduct(shoe)
@@ -116,7 +116,8 @@ function ShoeListing() {
           name: shoe.name,
           price: shoe.price,
           color: shoe.color[selectedColor],
-          size: shoesize
+          size: shoesize,
+          userid: userId
         })
       promise.then(
         function (response) {
@@ -127,7 +128,6 @@ function ShoeListing() {
         }
       )
       } else {
-        console.log(conf.appwriteCollectionId);
         alert("Login to use this feature")
       }
 
@@ -142,16 +142,12 @@ function ShoeListing() {
           <img src={shoe.image.shoe3} alt="" ref={img3Ref} id='img3' className="ani-3 ani-33" />
         </div>
         <div className="info-container">
-          <h2>{shoe.name}</h2>
-          <h1>NIKE PEGASUS <br /> DZ2539-500</h1>
+          <h2>ShoeSavvy</h2>
+          <h1>{shoe.name}</h1>
           <h2>{shoe.price}</h2>
-          <p>Whatever your "why" is for working out, the Metcon 9 makes it all worth it. We improved on the 8 with
-            a
-            larger Hyperlift plate and added rubber rope wrap. Intended for lifters, trainers and go-getters,
-            some
-            of the greatest athletes in the world swear by it, and it's still the gold standard that delivers
-            day
-            after day</p>
+          <p>We improved on the 8 with a larger Hyperlift plate and added rubber rope wrap. Intended for lifters,
+            trainers and go-getters, some of the greatest athletes in the world swear by it, and it's still the
+            gold standard that delivers day after day</p>
           <div className="info-img">
             <img src={shoe.image.shoe1} alt="" ref={hoverImg1Ref} id="hover-img1" onClick={() => handleImageClick(shoe.image.shoe1, 'shoe1')} />
             <img src={shoe.image.shoe2} alt="" ref={hoverImg2Ref} id="hover-img2" onClick={() => handleImageClick(shoe.image.shoe2, 'shoe2')} />
@@ -161,9 +157,11 @@ function ShoeListing() {
           <div className="bottom">
             <p className="size">Select Size</p>
             <select name="size" id="shoes-size" value={shoesize} onChange={handleSizeChange} >
-              <option value="8.5" > US 8.5</option>
-              <option value="9.0" > US 9.0</option>
-              <option value="9.5" > US 9.5</option>
+              <option value="6"> 6</option>
+              <option value="7"> 7</option>
+              <option value="8"> 8</option>
+              <option value="9" selected> 9</option>
+              <option value="10"> 10</option>
             </select>
             {/* <Link to={'/addtocart'}> */}
             <button className="shoelistingbtn" onClick={handleSubmit}><img src="img/logo/shopping.svg" alt="" />Add to Cart</button>

@@ -81,6 +81,11 @@ footer .second-col .social-icons a {
     padding: 8px;
 }
 
+ #fb img{
+    /* border: 1px solid black; */
+    padding: 3px;
+}
+
 footer .second-col .social-icons a img {
     /* width: 25px; */
     /* height: 25px; */

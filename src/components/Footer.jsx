@@ -19,7 +19,7 @@ function Footer() {
                         <a href="#" className="icon">
                             <img src="/src/images/social-icon-img/twitter.svg" alt="" />
                         </a>
-                        <a href="#" className="icon">
+                        <a href="#" className="icon" id='fb'>
                             <img src="/src/images/social-icon-img/facebook-f.svg" alt="" />
                         </a>
                         <a href="#" className="icon">

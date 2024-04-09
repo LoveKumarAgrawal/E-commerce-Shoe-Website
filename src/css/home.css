@@ -1,10 +1,7 @@
 #home {
-    /* border: 4px solid red; */
-    /* background-color: yellow; */
     height: 93vh;
     width: 100%;
     display: flex;
-    /* background-color: rgb(210, 208, 208); */
 }
 
 #home .home-left {
@@ -54,6 +51,7 @@
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 0.8px;
+    color: rgb(34, 34, 34);
 }
 
 .home-left .subHeading {
@@ -62,6 +60,7 @@
     text-transform: uppercase;
     letter-spacing: 0.3px;
     margin: 30px 0px;
+    color: rgb(34, 34, 34);
 }
 
 .homebtn {
@@ -79,27 +78,9 @@
 }
 
 .homebtn:hover {
-    /* background: rgba(28, 105, 84,1); */
     background-color: tomato;
     color: white;
 }
-
-/* .home-right .img-toggle-btn{
-    border: 2px solid black;
-    position: absolute;
-    right:30px;
-    bottom: 0px;
-}
-
-.home-right .img-toggle-btn img{
-    width: 15px;
-    cursor: pointer;
-}
-
-.home-right .img-toggle-btn span{
-    border: 2px solid yellow;
-    margin: 0px 15px;
-} */
 
 /* #shoe-category CSS */
 
@@ -115,10 +96,8 @@
 #shoe-category .box {
     height: 350px;
     width: 400px;
-    background-color: yellow;
     margin: 0px 15px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
 }
 #shoe-category .box:hover{
@@ -182,13 +161,42 @@
 }
 
 #section-one .heading {
+    /* border: 2px solid green; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-one .heading h2 {
+    /* border: 2px solid red; */
     font-family: "Bree Serif", serif;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1px;
     font-weight: 100;
-    padding: 30px;
+    padding-bottom: 5px;
 }
+
+#section-one .line {
+    border: 1px solid tomato;
+    border-radius: 1px;
+    width: 130px;
+    /* margin: auto; */
+    /* transform: translateX(-800px); */
+    animation: linemove 3s ease;
+}
+
+@keyframes linemove {
+    from {
+        transform: translateX(-800px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
 
 #section-one .shoe-container {
     /* border: 2px solid red; */
@@ -241,6 +249,7 @@
 
 .shoe-group .shoe-item .social-icons a{
     /* border: 1px solid #ccc; */
+    border: none;
     border-radius: 50%;
     display: inline-flex;
     width: 37px;
@@ -251,6 +260,7 @@
     opacity: 0;
     transition: all 0.8s ease;
     background-color: white;
+    transform: translateY(20px);
     /* filter: invert(100%); */
 }
 
@@ -266,7 +276,7 @@
 
 .shoe-item:hover .social-icons a {
     /* border: 4px solid green; */
-    transform: translateY(-20px);
+    transform: translateY(0px);
     opacity: 1;
 }
 
@@ -454,7 +464,6 @@
 /* section-two CSS*/
 
 #section-two {
-    /* border: 4px solid green; */
     position: relative;
     width: 100%;
     height: 450px;
@@ -463,7 +472,6 @@
 }
 
 #section-two .bg-container {
-    /* border: 4px solid black; */
     height: 100%;
     width: 100%;
     position: relative;
@@ -566,8 +574,6 @@
 }
 
 #instra {
-    /* border: 2px solid red; */
-    /* background-color:#ffe6da; */
     width: 100%;
     height: 310px;
     display: grid;
@@ -577,13 +583,11 @@
 }
 
 #instra .box {
-    /* border: 1px solid black; */
     position: relative;
     overflow: hidden;
 }
 
 #instra .box .bg-back {
-    /* border: 1px solid black; */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -591,7 +595,6 @@
 }
 
 #instra .box .bg-back img {
-    /* border: 1px solid black; */
     width: 100%;
     height: 100%;
     transition: all 3s ease;
@@ -600,7 +603,6 @@
 #instra .box .bg-upper {
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.616); */
     background-color: #000000b3;
     position: absolute;
     display: flex;
@@ -635,7 +637,6 @@
 
 /* Shoes Featured and Compare */
 #shoe-compare {
-    /* border: 4px solid green; */
     width: 100%;
     height: 100%;
     display: grid;
@@ -648,7 +649,6 @@
 }
 
 #shoe-compare .box {
-    /* border: 1px solid black; */
     border-bottom: 1px solid #e9e9e9;
     font-family: "Jost", sans-serif;
     display: flex;
@@ -657,7 +657,6 @@
 }
 
 #shoe-compare .main {
-    /* border: 1px solid green; */
     margin-bottom: 5px;
 }
 
@@ -673,24 +672,22 @@
 }
 
 #shoe-compare .box img {
-    /* border: 2px solid #eaeaea; */
-    border: 2px solid #eaeaea;
-    ;
-    /* border-radius: 50%; */
+    background-color: #efefef;
+    border-radius: 5px;
     height: 130px;
     width: 130px;
     padding: 5px;
     margin-right: 25px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 #shoe-compare .box img:hover {
-    border: none;
-    box-shadow: 0 15px 25px #00000014;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #00000014;
 }
 
 #shoe-compare .box .info a {
-    /* border: 1px solid yellow; */
     display: block;
     text-decoration: none;
     color: black;
@@ -707,13 +704,11 @@
 }
 
 #shoe-compare .box.middle .price {
-    /* border: 1px solid black; */
     display: inline;
     text-decoration: line-through;
 }
 
 #shoe-compare .box.middle span {
-    /* border: 1px solid red; */
     font-weight: 500;
     font-size: 16px;
     color: #b8920b;
@@ -723,7 +718,6 @@
 /* Services */
 
 #service {
-    /* border: 4px solid red; */
     width: 100%;
     height: 50%;
     display: grid;
@@ -733,7 +727,6 @@
 }
 
 #service .box {
-    /* border: 2px solid black; */
     font-family: "Jost", sans-serif;
     display: flex;
     flex-direction: column;
@@ -744,7 +737,6 @@
 }
 
 #service .box img {
-    /* border: 3px solid red; */
     width: 50px;
     height: 50px;
     padding: 3px;

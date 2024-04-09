@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../css/sports.css';
-import BestSellersProducts from './Women/WomenProducts';
+import SportsProduct from './Sports/SportsProducts'
 import { Link } from 'react-router-dom'
 
 function Sports() {
@@ -112,7 +112,7 @@ function Sports() {
             <div class="line"></div>
         </div>
         <div className={`shoe-container ${filterShoe ? 'filter-shoe' : ''}`} id="shoe-container">
-                {BestSellersProducts.map((shoe) => (
+                {SportsProduct.map((shoe) => (
                         <div className="shoe-group" key={shoe.id}>
                             <Link to={`/shoe/${shoe.id}`}>
                                 <div className="shoe-item" id={shoe.id}>
