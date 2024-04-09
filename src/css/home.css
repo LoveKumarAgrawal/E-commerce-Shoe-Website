@@ -26,7 +26,8 @@
 #home .home-right #home-img {
     height: 500px;
     width: 500px;
-    background: url("/src/images/three-shoe/shoes-1.png")no-repeat center center;
+    background: url("/src/images/shoes-img/home/3-a.png")no-repeat center center;
+    transform: rotate(33deg);
     background-size: 100%;
 }
 
@@ -34,7 +35,7 @@
     height: 510px;
     width: 510px;
     display: block;
-    background-color: rgb(207, 255, 207);
+    background-color: rgba(207, 255, 207, 0.77);
     border-radius: 50%;
     overflow: hidden;
     padding: 10px;
