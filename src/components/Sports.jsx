@@ -1,18 +1,26 @@
 import React, { useState } from 'react';
 import '../css/sports.css';
-import SportsProduct from './Sports/SportsProducts';
+import products from './Sports/SportsProducts';
 import { Link } from 'react-router-dom';
 
 function Sports() {
     const [sidebarOpen, setSidebarOpen] = useState(true);
     const [filterShoe, setFilterShoe] = useState(false);
-    const [selectedColor, setSelectedColor] = useState(null); // State for selected color
+    const [filterPrice, setFilterPrice] = useState(10000); // Default max price
+    const [selectedColor, setSelectedColor] = useState(null);
     const colors = ['white', 'beige', 'yellow', 'orange', 'black', 'brown', 'pink', 'blue', 'green', 'purple'];
 
-    // Function to toggle sidebar
+    // Function to toggle sidebar and reset filters
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
         setFilterShoe(!filterShoe);
+        setFilterPrice(10000); // Reset price filter
+        setSelectedColor(null); // Reset color filter
+    };
+    
+    // Function to handle price range change
+    const handlePriceChange = (event) => {
+        setFilterPrice(parseInt(event.target.value));
     };
 
     // Function to handle color selection
@@ -20,16 +28,24 @@ function Sports() {
         console.log("Selected color:", color);
         setSelectedColor(color); // Set the selected color
     };
-
-    // Function to filter products based on selected color
+    // Function to filter products based on price and selected colors
     const filterProducts = (product) => {
-        if (!selectedColor) {
-            return true; // No color filter applied
-        } else {
-            // Check if the product's color matches the selected color
-            return Object.values(product.color).includes(selectedColor);
+        if (product.price <= filterPrice) {
+            if (!selectedColor) {
+                return true; // No color filter applied
+            } else {
+                console.log(Object.values(product.color));
+                // Check if the product's color matches the selected color
+                return Object.values(product.color).includes(selectedColor);
+            }
         }
+        return false;
     };
+
+
+    if (!products || products.length === 0) {
+        return <div>No products available</div>;
+    }
 
     return (
         <>
@@ -78,9 +94,9 @@ function Sports() {
                             <h3>Price</h3>
                             <div class="price-range">
                                 <span class="range-min">₹ 0</span>
-                                <span>₹&nbsp;<input type="number" id="range-max" value="10000" /></span>
+                                <span>₹&nbsp;<input type="number" id="range-max" value={filterPrice} onChange={handlePriceChange} /></span>
                             </div>
-                            <input type="range" id="rangebar" min="0" value="10000" max="10000" />
+                            <input type="range" id="rangebar" min="0" value={filterPrice} max="10000" onChange={handlePriceChange} />
                         </div>
                         <div class="color-container">
                             <h3>Color</h3>
@@ -103,7 +119,7 @@ function Sports() {
                     <div className="line"></div>
                 </div>
                 <div className={`shoe-container ${filterShoe ? 'filter-shoe' : ''}`} id="shoe-container">
-                    {SportsProduct.filter(filterProducts).map((shoe) => (
+                    {products.filter(filterProducts).map((shoe) => (
                         <div className="shoe-group" key={shoe.id}>
                             <Link to={`/shoe/${shoe.id}`}>
                                 <div className="shoe-item" id={shoe.id}>
