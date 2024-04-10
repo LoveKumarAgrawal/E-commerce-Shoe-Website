@@ -215,7 +215,7 @@
 
 #mensection-two .shoe-container .shoe-item img {
     /* border: 2px solid black; */
-    width: 250px;
+    width: 91%;
     height: 100%;
     transition: all 0.8s ease;
 }
@@ -517,45 +517,6 @@
 .sidebar .color-container .color-grid .color:hover {
     transform: scale(1.3);
 }
-
-/* 
-
-.sidebar .color-grid .color:nth-child(1) {
-    background-color: white;
-}
-
-.sidebar .color-grid .color:nth-child(2) {
-    background-color: beige;
-}
-
-.sidebar .color-grid .color:nth-child(3) {
-    background-color: yellow;
-}
-
-.sidebar .color-grid .color:nth-child(4) {
-    background-color: orange;
-}
-.sidebar .color-grid .color:nth-child(5) {
-    background-color: black;
-}
-.sidebar .color-grid .color:nth-child(6) {
-    background-color: brown;
-}
-.sidebar .color-grid .color:nth-child(7) {
-    background-color:pink;
-}
-
-.sidebar .color-grid .color:nth-child(8) {
-    background-color: blue;
-}
-
-.sidebar .color-grid .color:nth-child(9) {
-    background-color: green;
-}
-
-.sidebar .color-grid .color:nth-child(10) {
-    background-color: purple;
-} */
 
 .sidebar .size-container {
     margin-top: 28px;
