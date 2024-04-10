@@ -17,7 +17,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="home-right">
-                    <Link to={`/shoe/shoe-item2`}>
+                    <Link to={`/shoe/shoe-item3`}>
                         <div id="home-img"></div>
                     </Link>
                 </div>
