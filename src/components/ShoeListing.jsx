@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Products from './Home/HomeProducts';
+import MenProduct from './Men/MenProduct';
+import WomenProduct from './Women/WomenProducts';
+import SportsProduct from './Sports/SportsProducts';
 import { v4 as uuidv4 } from 'uuid'
 import { databases, account } from '../appwrite/appwriteConfig'
 import '../css/shoelisting.css'
@@ -86,11 +89,11 @@ function ShoeListing() {
   }, []);
   
   const { id } = useParams();
-  const shoe = Products.find((item) => item.id === id);
+  const shoe = Products.find((item) => item.id === id) || MenProduct.find((item) => item.id === id) || WomenProduct.find((item) => item.id === id) || SportsProduct.find((item) => item.id === id);
 
   const [selectedImage, setSelectedImage] = useState(shoe.image.shoe1);
   const [selectedColor, setSelectedColor] = useState('shoe1');
-  const [shoesize, setShoeSize] = useState('8.5');
+  const [shoesize, setShoeSize] = useState('9');
 
 
   const handleImageClick = (image, color) => {
