@@ -192,7 +192,7 @@ function Home() {
                             <img src="../src/images/instra-img/img-1.webp" alt="" />
                         </div>
                         <div className="bg-upper">
-                            <a href="#"><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
+                            <a href="https://www.instagram.com/web.cbum/" target='_blank'><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
                         </div>
                     </div>
                     <div className="box" id="box-2">
@@ -200,7 +200,7 @@ function Home() {
                             <img src="../src/images/instra-img/img-2.webp" alt="" />
                         </div>
                         <div className="bg-upper">
-                            <a href="#"><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
+                            <a href="https://www.instagram.com/web.cbum/" target='_blank'><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
                         </div>
                     </div>
                     <div className="box" id="box-3">
@@ -208,7 +208,7 @@ function Home() {
                             <img src="../src/images/instra-img/img-3.webp" alt="" />
                         </div>
                         <div className="bg-upper">
-                            <a href="#"><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
+                            <a href="https://www.instagram.com/web.cbum/" target='_blank'><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
                         </div>
                     </div>
                     <div className="box" id="box-4">
@@ -216,7 +216,7 @@ function Home() {
                             <img src="../src/images/instra-img/img-4.webp" alt="" />
                         </div>
                         <div className="bg-upper">
-                            <a href="#"><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
+                            <a href="https://www.instagram.com/web.cbum/" target='_blank'><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
                         </div>
                     </div>
                     <div className="box" id="box-5">
@@ -224,7 +224,7 @@ function Home() {
                             <img src="../src/images/instra-img/img-5.webp" alt="" />
                         </div>
                         <div className="bg-upper">
-                            <a href=""><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
+                            <a href="https://www.instagram.com/web.cbum/" target='_blank'><img src="../src/images/social-icon-img/instagram.svg" alt="" /></a>
                         </div>
                     </div>
                 </div>
