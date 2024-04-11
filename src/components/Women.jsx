@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/women.css';
 import products from './Women/WomenProducts';
 import { Link } from 'react-router-dom'
 
 function Women() {
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+    });
     const [sidebarOpen, setSidebarOpen] = useState(true);
     const [filterShoe, setFilterShoe] = useState(false);
     const [filterPrice, setFilterPrice] = useState(10000); // Default max price

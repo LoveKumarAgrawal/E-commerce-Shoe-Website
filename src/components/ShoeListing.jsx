@@ -11,6 +11,9 @@ import { useSelector } from 'react-redux';
 import conf from '../conf/conf.js';
 
 function ShoeListing() {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+});
   const img1Ref = useRef(null);
   const img2Ref = useRef(null);
   const img3Ref = useRef(null);

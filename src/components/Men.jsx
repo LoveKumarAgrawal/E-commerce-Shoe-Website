@@ -4,6 +4,9 @@ import products from './Men/MenProduct'
 import { Link } from 'react-router-dom'
 
 function Men() {
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+    });
     const [sidebarOpen, setSidebarOpen] = useState(true);
     const [filterShoe, setFilterShoe] = useState(false);
     const [filterPrice, setFilterPrice] = useState(10000); // Default max price

@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/sports.css';
 import products from './Sports/SportsProducts';
 import { Link } from 'react-router-dom';
 
 function Sports() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+    });
     const [sidebarOpen, setSidebarOpen] = useState(true);
     const [filterShoe, setFilterShoe] = useState(false);
     const [filterPrice, setFilterPrice] = useState(10000); // Default max price
