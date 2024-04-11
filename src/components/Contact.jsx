@@ -42,7 +42,7 @@ function Contact() {
         </div>
         <div className="video">
           <a href="https://maps.app.goo.gl/JuqaL2iE5RBbn3EW8" target="_blank">
-            <video autoPlay muted>
+            <video autoPlay muted loop>
               <source src='../src/video/gla.mp4' />
             </video>
           </a>

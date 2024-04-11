@@ -72,15 +72,21 @@ function Signup() {
     );
 
     promise.then(
-      function (response) {
-        account.createEmailPasswordSession(user.email, user.password)
-        dispatch(authlogin()) // success
-        navigate("/")
+      async function (response) {
+        // After successful signup, create session and get current user
+        await account.createEmailPasswordSession(user.email, user.password);
+        const currentUser = await account.get('current');
+        
+        // Dispatch action with current user ID
+        dispatch(authlogin(currentUser.$id));
+        
+        // Navigate to desired location
+        navigate("/");
       },
       function (error) {
         console.log(error);  // failure
       }
-    )
+    );
 
   }
   const [loginuser, setLoginUser] = useState({

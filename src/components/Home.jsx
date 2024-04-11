@@ -2,6 +2,7 @@ import React from 'react'
 import Products from './Home/HomeProducts'
 import HomeProductCompare from './Home/HomeProductCompare'
 import { Link } from 'react-router-dom'
+
 import '../css/home.css'
 
 function Home() {
@@ -13,7 +14,9 @@ function Home() {
                     <p className="heading">new shoes</p>
                     <p className="subHeading">up to 30% off all shoes & products</p>
                     <div className="btn-container">
-                        <a href="shoe.html" target="_blank"><button className="homebtn">Shop Now</button></a>
+                    <Link to={`/shoe/shoe-item3`}>
+                        <button className="homebtn">Shop Now</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="home-right">
@@ -94,21 +97,25 @@ function Home() {
                     <img src="../src/images/bg-img/bg-17.webp" alt="" />
                     <div className="info">
                         <h2>Running Shoes</h2>
-                        <a href="#">shop now<div className="line"></div></a>
+                        <Link to={'/men'} className='navlink'>
+                        <a href="">shop now<div className="line"></div></a>
+                        </Link>
                     </div>
                 </div>
                 <div className="box" id="box-2">
                     <img src="../src/images/bg-img/bg-18.webp" alt="" />
                     <div className="info">
                         <h2>Basic Collection</h2>
-                        <a href="#">shop now<div className="line"></div></a>
+                        <a href="#section-one">shop now<div className="line"></div></a>
                     </div>
                 </div>
                 <div className="box" id="box-3">
                     <img src="../src/images/bg-img/bg-19.webp" alt="" />
                     <div className="info">
                         <h2>Sport Shoes</h2>
-                        <a href="#">shop now<div className="line"></div></a>
+                        <Link to={'/sports'} className='navlink'>
+                        shop now<div className="line"></div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -122,7 +129,9 @@ function Home() {
                 <div className="info">
                     <h1>Sport Shoes</h1>
                     <p>Up to 20% off for you</p>
+                    <Link to={'/sports'} className='navlink'>
                     <button className="homebtn btn-sm">Shop Now</button>
+                    </Link>
                 </div>
             </div>
 

@@ -50,33 +50,33 @@ function Sports() {
     return (
         <>
             <div id="sport-section1">
-            <div class="box" id="box-1">
+            <div  className="box" id="box-1">
                     <a href="#sport-section2">
-                        <div class="name">
+                        <div  className="name">
                             <h2>Hiking Shoes</h2>
                         </div>
                         <img src="src/images/bg-img/bg-20.webp" alt="" />
                     </a>
                 </div>
-                <div class="box" id="box-2">
+                <div  className="box" id="box-2">
                     <a href="#sport-section2">
-                        <div class="name">
+                        <div  className="name">
                             <h2>Running Shoes</h2>
                         </div>
                         <img src="src/images/bg-img/bg-21.webp" alt="" />
                     </a>
                 </div>
-                <div class="box" id="box-3">
+                <div  className="box" id="box-3">
                     <a href="#sport-section2">
-                        <div class="name">
+                        <div  className="name">
                             <h2>Soccer Shoes</h2>
                         </div>
                         <img src="src/images/bg-img/bg-22.webp" alt="" />
                     </a>
                 </div>
-                <div class="box" id="box-4">
+                <div  className="box" id="box-4">
                     <a href="#sport-section2">
-                        <div class="name">
+                        <div  className="name">
                             <h2>Tennis Shoes</h2>
                         </div>
                         <img src="src/images/bg-img/bg-23.webp" alt="" />
@@ -89,16 +89,16 @@ function Sports() {
                 </button>
                 <div className={`sidebar ${sidebarOpen ? 'sidebarGo' : ''}`}>
                 <img className="cross cross-ani" src="/src/images/logo/cross.svg" alt="" width="17px" onClick={toggleSidebar} />
-                    <div class="info">
-                        <div class="range-container">
+                    <div  className="info">
+                        <div  className="range-container">
                             <h3>Price</h3>
-                            <div class="price-range">
-                                <span class="range-min">₹ 0</span>
+                            <div  className="price-range">
+                                <span  className="range-min">₹ 0</span>
                                 <span>₹&nbsp;<input type="number" id="range-max" value={filterPrice} onChange={handlePriceChange} /></span>
                             </div>
                             <input type="range" id="rangebar" min="0" value={filterPrice} max="10000" onChange={handlePriceChange} />
                         </div>
-                        <div class="color-container">
+                        <div  className="color-container">
                             <h3>Color</h3>
                             <div className="color-grid">
                                 {colors.map((color) => (
