@@ -165,7 +165,7 @@ function Home() {
                     <h2 className="topic">top sale products</h2>
                 </div>
                 {HomeProductCompare.map(shoe => (
-                    <div className={`box ${shoe.id === 2 || shoe.id === 5 || shoe.id === 8 ? 'middle' : ''} ${shoe.id >= 10 ? 'bottom' : ''}`} key={shoe.id}>
+                    <div className={`box ${shoe.n === 2 || shoe.n === 5 || shoe.n === 8 ? 'middle' : ''} ${shoe.n >= 10 ? 'bottom' : ''}`} key={shoe.id}>
                         <img src={shoe.image.shoe1} alt={shoe.name} />
                         <div className="info">
                             <div className="name">
