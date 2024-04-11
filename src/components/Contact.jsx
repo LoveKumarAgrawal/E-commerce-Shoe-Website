@@ -3,8 +3,8 @@ import TeamSection from './Home/Team'
 import '../css/contact.css'
 function Contact() {
   useEffect(() => {
-    window.scrollTo(0, 0); 
-});
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div id="section-three">
