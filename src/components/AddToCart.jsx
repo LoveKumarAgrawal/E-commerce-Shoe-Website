@@ -102,7 +102,7 @@ function AddToCart() {
                 <h4 id="offer">20% off</h4>
                 <h4 id="deal">Limited time deal</h4>
                 <h4 id="price">{product.price}</h4>
-                <h4 id="mrp">M.R.P.:&nbsp;<span id="mrp-price">{product.price}</span></h4>
+                <h4 id="mrp">M.R.P.:&nbsp;<span id="mrp-price">{(0.2*parseInt(product.price))+parseInt(product.price)}</span></h4>
               </div>
             </div>
           ))}

@@ -150,7 +150,7 @@ function ShoeListing() {
         <div className="info-container">
           <h2>ShoeSavvy</h2>
           <h1>{shoe.name}</h1>
-          <h2>{shoe.price}</h2>
+          <h2>₹{shoe.price}</h2>
           <p>We improved on the 8 with a larger Hyperlift plate and added rubber rope wrap. Intended for lifters,
             trainers and go-getters, some of the greatest athletes in the world swear by it, and it's still the
             gold standard that delivers day after day</p>
@@ -166,7 +166,7 @@ function ShoeListing() {
               <option value="6"> 6</option>
               <option value="7"> 7</option>
               <option value="8"> 8</option>
-              <option value="9" selected> 9</option>
+              <option value="9" > 9</option>
               <option value="10"> 10</option>
             </select>
             {/* <Link to={'/addtocart'}> */}
