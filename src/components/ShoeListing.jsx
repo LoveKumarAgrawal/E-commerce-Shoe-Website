@@ -9,6 +9,8 @@ import { databases, account } from '../appwrite/appwriteConfig'
 import '../css/shoelisting.css'
 import { useSelector } from 'react-redux';
 import conf from '../conf/conf.js';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ShoeListing() {
   useEffect(() => {
@@ -127,6 +129,7 @@ function ShoeListing() {
         })
       promise.then(
         function (response) {
+          toast.success("The product is added to cart",{autoClose: 3000})
           console.log(response);
         },
         function (error) {
@@ -134,7 +137,7 @@ function ShoeListing() {
         }
       )
       } else {
-        alert("Login to use this feature")
+        toast.error("Login to use this feature",{autoClose: 3000})
       }
 
     }
@@ -171,13 +174,13 @@ function ShoeListing() {
             </select>
             {/* <Link to={'/addtocart'}> */}
             <button className="shoelistingbtn" onClick={handleSubmit}><img src="img/logo/shopping.svg" alt="" />Add to Cart</button>
+            <ToastContainer />
 
             {/* </Link> */}
           </div>
         </div>
       </div>
     </div>
-
   );
 }
 
