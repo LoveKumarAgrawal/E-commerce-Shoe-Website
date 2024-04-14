@@ -2,6 +2,8 @@ import React,{ useEffect, useState } from 'react'
 import TeamSection from './Home/Team'
 import '../css/contact.css'
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
   useEffect(() => {
@@ -29,7 +31,7 @@ function Contact() {
       .send('service_yf4s25j', 'template_smmuhmq', templateParams, 'DKvuPTJnLQRekzoOu')
       .then(
         (response) => {
-          console.log('SUCCESS!');
+          toast.success("The message is sent", {autoClose: 3000})
           setName('');
           setLastName('');
           setEmail('');
@@ -37,7 +39,7 @@ function Contact() {
           setMessage('');
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          toast.error("Failed to send message", {autoClose: 3000})
         },
       );
   }
@@ -81,6 +83,7 @@ function Contact() {
           </div>
           <textarea placeholder="Message" value={message} onChange={(e)=>setMessage(e.target.value)} required></textarea>
           <button className="homebtn btn-msg" type='submit'>Send Message</button>
+          <ToastContainer />
         </div>
         <div className="video">
           <a href="https://maps.app.goo.gl/JuqaL2iE5RBbn3EW8" target="_blank">
