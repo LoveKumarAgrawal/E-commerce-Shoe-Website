@@ -187,6 +187,9 @@
 .shoelistingbtn:hover {
     background-color: tomato;
 }
+.shoelistingbtn:active {
+    background-color: rgb(151,38,38);
+}
 
 .info-container button img {
     width: 17px;

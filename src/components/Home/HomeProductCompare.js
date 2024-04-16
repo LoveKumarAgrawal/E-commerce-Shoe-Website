@@ -7,7 +7,7 @@ const Compare = [
   { n:6,id: 'shoe-item6', name: 'Revolution', price: '₹5900', image: {shoe1: '/src/images/shoes-img/home/6-a.png',shoe2: '/src/images/shoes-img/home/6-b.png',shoe3: '/src/images/shoes-img/home/6-c.png'}, color: {shoe1: 'brown', shoe2: 'red', shoe3: 'green'} },
   { n:7,id: 'shoe-item7', name: 'AlphaBounce', price: '₹4999', image: {shoe1: '/src/images/shoes-img/home/7-a.png',shoe2: '/src/images/shoes-img/home/7-b.png',shoe3: '/src/images/shoes-img/home/7-c.png'}, color: {shoe1: 'white-brown', shoe2: 'white-blue', shoe3: 'white-green'} },
   { n:8,id: 'shoe-item8', name: 'Fluid Flow', price: '₹7999', discountedPrice: '₹5999' , image: {shoe1: '/src/images/shoes-img/home/8-a.png',shoe2: '/src/images/shoes-img/home/8-b.png',shoe3: '/src/images/shoes-img/home/8-c.png'}, color: {shoe1: 'skincolor', shoe2: 'light-green', shoe3: 'baby-pink'} },
-  { n:9,id: 'shoe-item9', name: 'Gel Excite', price: '₹8999', image: {shoe1: '/src/images/shoes-img/home/4-b.png',shoe2: '/src/images/shoes-img/home/4-a.png',shoe3: '/src/images/shoes-img/home/4-c.png'}, color: {shoe1: 'give', shoe2: 'white-red', shoe3: 'give'} }
+  { n:9,id: 'shoe-item4', name: 'Gel Excite', price: '₹8999', image: {shoe1: '/src/images/shoes-img/home/4-b.png',shoe2: '/src/images/shoes-img/home/4-a.png',shoe3: '/src/images/shoes-img/home/4-c.png'}, color: {shoe1: 'give', shoe2: 'white-red', shoe3: 'give'} }
 ];
 
 export default Compare;

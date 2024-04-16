@@ -101,13 +101,13 @@ function AddToCart() {
               <div className="right">
                 <h4 id="offer">20% off</h4>
                 <h4 id="deal">Limited time deal</h4>
-                <h4 id="price">{product.price}</h4>
-                <h4 id="mrp">M.R.P.:&nbsp;<span id="mrp-price">{(0.2*parseInt(product.price))+parseInt(product.price)}</span></h4>
+                <h4 id="price">₹{product.price}</h4>
+                <h4 id="mrp">M.R.P:&nbsp;<span id="mrp-price">₹{(0.2*parseInt(product.price))+parseInt(product.price)}</span></h4>
               </div>
             </div>
           ))}
           <div className="bottom">
-            <h2>Subtotal (<span id="no_of_item">{products.length}</span>&nbsp;items):&nbsp;<span id="total">{subtotal.toFixed(2)}</span></h2>
+            <h2>Subtotal (<span id="no_of_item">{products.length}</span>&nbsp;items):&nbsp;<span id="total">₹{subtotal.toFixed(2)}</span></h2>
           </div>
         </div>
       </div>}

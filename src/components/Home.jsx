@@ -16,7 +16,7 @@ function Home() {
                     <div className="btn-container">
                     <Link to={`/shoe/shoe-item3`}>
                         <button className="homebtn">Shop Now</button>
-                        </Link>
+                    </Link>
                     </div>
                 </div>
                 <div className="home-right">
@@ -70,7 +70,7 @@ function Home() {
                                 </div>
                             </Link>
                             <h3>{shoe.name}</h3>
-                            <p>{shoe.price}</p>
+                            <p>₹{shoe.price}</p>
                         </div>
                     ))}
                 </div>
@@ -165,7 +165,7 @@ function Home() {
                     <h2 className="topic">top sale products</h2>
                 </div>
                 {HomeProductCompare.map(shoe => (
-                    <div className={`box ${shoe.n === 2 || shoe.n === 5 || shoe.n === 8 ? 'middle' : ''} ${shoe.n >= 10 ? 'bottom' : ''}`} key={shoe.id}>
+                    <div className={`box ${shoe.n === 2 || shoe.n === 5 || shoe.n === 8 ? 'middle' : ''} ${shoe.n >= 10 ? 'bottom' : ''}`} key={shoe.n}>
                         <img src={shoe.image.shoe1} alt={shoe.name} />
                         <div className="info">
                             <div className="name">

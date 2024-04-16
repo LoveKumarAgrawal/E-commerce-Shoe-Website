@@ -109,7 +109,7 @@ function Sports() {
                                     <li
                                         className={`color ${selectedColor === color ? 'selected' : ''}`}
                                         id={`color-${color}`}
-                                        style={{ borderColor: selectedColor === color ? 'red' : 'transparent', borderWidth: '2px', borderStyle: 'solid',backgroundColor: color }}
+                                        style={{ borderColor: selectedColor === color ? '#007d7d' : 'transparent', borderWidth: '2px', borderStyle: 'solid',backgroundColor: color }}
                                         onClick={() => handleColorChange(color)}
                                         key={color}
                                     ></li>
@@ -142,7 +142,7 @@ function Sports() {
                                 </div>
                             </Link>
                             <h3>{shoe.name}</h3>
-                            <p>&#x20B9; {shoe.price}</p>
+                            <p>₹{shoe.price}</p>
                         </div>
                     ))}
                 </div>

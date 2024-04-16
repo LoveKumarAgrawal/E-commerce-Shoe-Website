@@ -139,8 +139,8 @@ function ShoeListing() {
       } else {
         toast.error("Login to use this feature",{autoClose: 3000})
       }
-
-    }
+  }
+  
 
   return (
     <div className="full-container">

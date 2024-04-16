@@ -1,15 +1,41 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../css/footer.css'
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Footer() {
+    const [email, setEmail] = useState('')
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+    
+        //create a new object that contains the dynamic template params
+        const templateParams = {
+          email: email
+        }
+        emailjs
+          .send('service_tjk2anu', 'template_pfqy2bw', templateParams, '-YDlVhrgGseGZTMMr')
+          .then(
+            (response) => {
+                setEmail('');
+                toast.success("The email is sent", {autoClose: 3000})
+            },
+            (error) => {
+              toast.error("Failed to send email", {autoClose: 3000})
+            },
+          );
+      }
     return (
         <>
             <footer>
+                <form onSubmit={handleSubmit}>
                 <div className="first-col colm">
                     <h3>Shoe Savvy</h3>
-                    <input type="email" placeholder="Enter Your Email" />
-                    <button className="homebtn btn-sm">Subscribe</button>
+                    <input type="email" placeholder="Enter Your Email" value={email} onChange={(e)=>setEmail(e.target.value)} required />
+                    <button className="homebtn btn-sm" type='submit'>Subscribe</button>
                 </div>
+                </form>
+                <ToastContainer />
                 <div className="second-col colm">
                     <h3>Contact Us</h3>
                     <p>Phone: +919528300525</p>
