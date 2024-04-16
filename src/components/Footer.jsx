@@ -5,19 +5,19 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Footer() {
-    const [email, setEmail] = useState('')
-    const handleSubmit = (e)=>{
+    const [subscribeEmail, setSubscribeEmail] = useState('')
+    const handleSubscribe = (e)=>{
         e.preventDefault();
     
         //create a new object that contains the dynamic template params
         const templateParams = {
-          email: email
+          email: subscribeEmail
         }
         emailjs
           .send('service_tjk2anu', 'template_pfqy2bw', templateParams, '-YDlVhrgGseGZTMMr')
           .then(
             (response) => {
-                setEmail('');
+                setSubscribeEmail('');
                 toast.success("The email is sent", {autoClose: 3000})
             },
             (error) => {
@@ -28,10 +28,10 @@ function Footer() {
     return (
         <>
             <footer>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubscribe}>
                 <div className="first-col colm">
                     <h3>Shoe Savvy</h3>
-                    <input type="email" placeholder="Enter Your Email" value={email} onChange={(e)=>setEmail(e.target.value)} required />
+                    <input type="email" placeholder="Enter Your Email" value={subscribeEmail} onChange={(e)=>setSubscribeEmail(e.target.value)} required />
                     <button className="homebtn btn-sm" type='submit'>Subscribe</button>
                 </div>
                 </form>
