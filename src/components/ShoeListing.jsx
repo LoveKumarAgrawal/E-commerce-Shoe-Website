@@ -14,6 +14,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function ShoeListing() {
   useEffect(() => {
+    fetchProducts();
     window.scrollTo(0, 0); 
 });
   const img1Ref = useRef(null);
@@ -92,7 +93,9 @@ function ShoeListing() {
 
 
   }, []);
-  
+  const [products, setProducts] = useState([]);
+  const authStatus = useSelector((state) => state.auth.status)
+  const userId = useSelector(state => state.auth.userData)
   const { id } = useParams();
   const shoe = Products.find((item) => item.id === id) || MenProduct.find((item) => item.id === id) || WomenProduct.find((item) => item.id === id) || SportsProduct.find((item) => item.id === id);
 
@@ -100,6 +103,54 @@ function ShoeListing() {
   const [selectedColor, setSelectedColor] = useState('shoe1');
   const [shoesize, setShoeSize] = useState('9');
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Check if the product already exists in the cart
+    const isProductExists = products.some(product => product.id === shoe.id && product.image === selectedImage && product.size === shoesize && product.color === shoe.color[selectedColor]);
+
+    if (isProductExists) {
+        toast.error("Product already exists in the cart", { autoClose: 3000 })
+    } else {
+        if (authStatus) {
+            const promise = databases.createDocument(conf.appwriteDatabaseId, conf.appwriteCollectionId, uuidv4(), {
+                id: shoe.id,
+                image: selectedImage,
+                name: shoe.name,
+                price: shoe.price,
+                color: shoe.color[selectedColor],
+                size: shoesize,
+                userid: userId
+            });
+
+            promise.then(
+                function (response) {
+                    toast.success("The product is added to cart", { autoClose: 3000 });
+                    console.log(response);
+                    fetchProducts();
+                },
+                function (error) {
+                    console.log(error);
+                }
+            );
+        } else {
+            toast.error("Login to use this feature", { autoClose: 3000 });
+        }
+    }
+}
+
+const fetchProducts = () => {
+  const getProducts = databases.listDocuments(conf.appwriteDatabaseId, conf.appwriteCollectionId);
+  getProducts.then(
+    function (response) {
+      const userProducts = response.documents.filter(product => product.userid === userId);
+      setProducts(userProducts);
+    },
+    function (error) {
+      console.log(error);
+    }
+  );
+};
 
   const handleImageClick = (image, color) => {
     setSelectedImage(image);
@@ -110,36 +161,7 @@ function ShoeListing() {
   };
   
   
-  const authStatus = useSelector((state) => state.auth.status)
-  const userId = useSelector(state => state.auth.userData)
-  
-  const handleSubmit = (e) => {
-      // e.preventDefault()
-      // setProduct(shoe)
-      if(authStatus){
-        const promise = databases.createDocument(conf.appwriteDatabaseId, conf.appwriteCollectionId, uuidv4(),
-        {
-          id: shoe.id,
-          image: selectedImage,
-          name: shoe.name,
-          price: shoe.price,
-          color: shoe.color[selectedColor],
-          size: shoesize,
-          userid: userId
-        })
-      promise.then(
-        function (response) {
-          toast.success("The product is added to cart",{autoClose: 3000})
-          console.log(response);
-        },
-        function (error) {
-          console.log(error);
-        }
-      )
-      } else {
-        toast.error("Login to use this feature",{autoClose: 3000})
-      }
-  }
+
   
 
   return (
