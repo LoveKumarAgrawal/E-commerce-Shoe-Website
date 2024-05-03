@@ -11,12 +11,13 @@ import { useSelector } from 'react-redux';
 import conf from '../conf/conf.js';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Query } from 'appwrite';
 
 function ShoeListing() {
   useEffect(() => {
     fetchProducts();
     window.scrollTo(0, 0); 
-});
+},[]);
   const img1Ref = useRef(null);
   const img2Ref = useRef(null);
   const img3Ref = useRef(null);
@@ -105,8 +106,10 @@ function ShoeListing() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Check if the product already exists in the cart
+    if(products.length===20){
+      toast.error("The cart is full", {autoClose: 3000})
+    } else {
+      // Check if the product already exists in the cart
     const isProductExists = products.some(product => product.id === shoe.id && product.image === selectedImage && product.size === shoesize && product.color === shoe.color[selectedColor]);
 
     if (isProductExists) {
@@ -137,14 +140,16 @@ function ShoeListing() {
             toast.error("Login to use this feature", { autoClose: 3000 });
         }
     }
+    
+    }
 }
 
 const fetchProducts = () => {
-  const getProducts = databases.listDocuments(conf.appwriteDatabaseId, conf.appwriteCollectionId);
+  const getProducts = databases.listDocuments(conf.appwriteDatabaseId, conf.appwriteCollectionId,[Query.equal('userid',userId)]);
   getProducts.then(
     function (response) {
-      const userProducts = response.documents.filter(product => product.userid === userId);
-      setProducts(userProducts);
+      // const userProducts = response.documents.filter(product => product.userid === userId);
+      setProducts(response.documents);
     },
     function (error) {
       console.log(error);

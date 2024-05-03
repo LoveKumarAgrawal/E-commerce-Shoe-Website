@@ -4,6 +4,7 @@ import '../css/addtocart.css';
 import Navbar from './Nav';
 import conf from '../conf/conf.js';
 import {useSelector} from 'react-redux'
+import { Query } from 'appwrite';
 
 
 function AddToCart() {
@@ -11,16 +12,15 @@ function AddToCart() {
   const [subtotal, setSubtotal] = useState(0);
 
   const userId = useSelector(state => state.auth.userData)
-
   
   useEffect(() => {
-    const getProducts = databases.listDocuments(conf.appwriteDatabaseId, conf.appwriteCollectionId);
+    const getProducts = databases.listDocuments(conf.appwriteDatabaseId, conf.appwriteCollectionId,[Query.equal('userid',userId)]);
     getProducts.then(
       function (response) {
-        const userProducts = response.documents.filter(product => product.userid === userId);
+        // const userProducts = response.documents.filter(product => product.userid === userId);
       
       // Initialize quantity to 1 for each product
-        const productsWithQuantity = userProducts.map(product => ({ ...product, quantity: 1 }));
+        const productsWithQuantity = response.documents.map(product => ({ ...product, quantity: 1 }));
         setProducts(productsWithQuantity);
       },
       function (error) {
