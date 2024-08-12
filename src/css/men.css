@@ -19,7 +19,7 @@
 }
 
 #Mensection-one #box-1::after {
-    background: rgba(0, 0, 0, 0.1) url("bg-img/bg-13.jpg")no-repeat top center/cover;
+    background: rgba(0, 0, 0, 0.1) url("/bg-img/bg-13.jpg")no-repeat top center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -32,7 +32,7 @@
 }
 
 #Mensection-one #box-2::after {
-    background: rgba(0, 0, 0, 0.1) url("bg-img/bg-16.jpg")no-repeat top center/cover;
+    background: rgba(0, 0, 0, 0.1) url("/bg-img/bg-16.jpg")no-repeat top center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -45,7 +45,7 @@
 }
 
 #Mensection-one #box-3::after {
-    background: rgba(0, 0, 0, 0.1) url("bg-img/bg-15.jpg")no-repeat top center/cover;
+    background: rgba(0, 0, 0, 0.1) url("/bg-img/bg-15.jpg")no-repeat top center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -298,7 +298,6 @@
     left: 0px;
     top: 10px;
     z-index: 500;
-    /*ye ab content ko nhi dhakelega ushke upar se aayega*/
     box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.4);
     float: left;
     transition: transform 0.9s ease;

@@ -264,7 +264,6 @@
     left: 0px;
     top: 10px;
     z-index: 500;
-    /* /ye ab content ko nhi dhakelega ushke upar se aayega/ */
     box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.4);
     float: left;
     transition: transform 0.9s ease;
@@ -326,9 +325,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    /* background: #664AFF; */
     background-color: white;
-    /* border: 1px solid #664AFF; */
     border: 5px solid #664AFF;
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1);

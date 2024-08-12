@@ -24,7 +24,7 @@
 #home .home-right #home-img {
     height: 500px;
     width: 500px;
-    background: url("shoes-img/home/3-a.png")no-repeat center center;
+    background: url("/shoes-img/home/3-a.png")no-repeat center center;
     transform: rotate(33deg);
     background-size: 100%;
 }
@@ -138,15 +138,15 @@
 }
 
 #shoe-category #box-1 {
-    background: url("shoe-category/men-shoe.jpg")no-repeat center center/cover;
+    background: url("/shoe-category/men-shoe.jpg")no-repeat center center/cover;
 }
 
 #shoe-category #box-2 {
-    background: url("shoe-category/women-shoe.jpg")no-repeat center center/cover;
+    background: url("/shoe-category/women-shoe.jpg")no-repeat center center/cover;
 }
 
 #shoe-category #box-3 {
-    background: url("shoe-category/sports-shoe.jpg")no-repeat center center/cover;
+    background: url("/shoe-category/sports-shoe.jpg")no-repeat center center/cover;
 }
 
 /* section-one CSS */
@@ -191,7 +191,6 @@
 
 
 #section-one .shoe-container {
-    /* border: 2px solid red; */
     display: grid;
     justify-content: space-evenly;
     align-items: center;
@@ -202,14 +201,12 @@
 }
 
 .shoe-container .shoe-group {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #section-one .shoe-container .shoe-item {
-    /* border: 2px solid black; */
     height: 280px;
     width: 270px;
     background-color: #efefef;
@@ -414,7 +411,7 @@
 }
 
 #offer #box-1::after {
-    background: rgba(0, 0, 0, 0.4) url("bg-img/bg-3.webp")no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0.4) url("/bg-img/bg-3.webp")no-repeat center center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -427,7 +424,7 @@
 }
 
 #offer #box-2::after {
-    background: rgba(0, 0, 0, 0.4) url("bg-img/bg-4.jpg")no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0.4) url("/bg-img/bg-4.jpg")no-repeat center center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -460,7 +457,7 @@
 #section-two .bg-img {
     height: 100%;
     width: 100%;
-    background: url("bg-img/bg-1.webp")no-repeat bottom center/cover;
+    background: url("/bg-img/bg-1.webp")no-repeat bottom center/cover;
     transition: all 2s ease;
 }
 
