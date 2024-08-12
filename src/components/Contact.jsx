@@ -4,6 +4,7 @@ import '../css/contact.css'
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import conf from '../conf/conf';
 
 function Contact() {
   useEffect(() => {
@@ -28,7 +29,7 @@ function Contact() {
       message: message
     }
     emailjs
-      .send('service_yf4s25j', 'template_smmuhmq', templateParams, 'DKvuPTJnLQRekzoOu')
+      .send(conf.emailjsServiceId, conf.emailjsTemplateId, templateParams, conf.emailjsPublicId)
       .then(
         (response) => {
           toast.success("The message is sent", {autoClose: 3000})
@@ -58,10 +59,10 @@ function Contact() {
               <h3>{member.name}</h3>
               <p>{member.job}</p>
               <div className="social-icons">
-                <a href="#" className="icon"><img src="/src/images/social-icon-img/facebook-f.svg" alt="" /></a>
-                <a href="#" className="icon"><img src="/src/images/social-icon-img/twitter.svg" alt="" /></a>
-                <a href="#" className="icon"><img src="/src/images/social-icon-img/instagram.svg" alt="" /></a>
-                <a href="#" className="icon"><img src="/src/images/social-icon-img/youtube.svg" alt="" /></a>
+                <a href="#" className="icon"><img src="social-icon-img/facebook-f.svg" alt="" /></a>
+                <a href="#" className="icon"><img src="social-icon-img/twitter.svg" alt="" /></a>
+                <a href="#" className="icon"><img src="social-icon-img/instagram.svg" alt="" /></a>
+                <a href="#" className="icon"><img src="social-icon-img/youtube.svg" alt="" /></a>
               </div>
             </div>
           ))}
@@ -88,7 +89,7 @@ function Contact() {
         <div className="video">
           <a href="https://maps.app.goo.gl/JuqaL2iE5RBbn3EW8" target="_blank">
             <video autoPlay muted loop>
-              <source src='../src/video/gla.mp4' />
+              <source src='video/gla.mp4' />
             </video>
           </a>
         </div>

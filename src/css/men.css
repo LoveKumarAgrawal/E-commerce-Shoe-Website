@@ -1,12 +1,8 @@
-
 /* #Mensection-one CSS*/
 
 #Mensection-one {
-    /* border: 3px solid green; */
-    /* height: 100%; */
     height: 650px;
     width: 100%;
-    /* background-color: beige; */
     display: grid;
     grid-template-columns: repeat(3, 375px);
     grid-template-rows: 520px;
@@ -15,8 +11,6 @@
 }
 
 #Mensection-one .box {
-    /* border: 1px solid black; */
-    /* background-color: bisque; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +19,7 @@
 }
 
 #Mensection-one #box-1::after {
-    background: rgba(0, 0, 0, 0.1) url("src/images/bg-img/bg-13.jpg")no-repeat top center/cover;
+    background: rgba(0, 0, 0, 0.1) url("bg-img/bg-13.jpg")no-repeat top center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -38,7 +32,7 @@
 }
 
 #Mensection-one #box-2::after {
-    background: rgba(0, 0, 0, 0.1) url("src/images/bg-img/bg-16.jpg")no-repeat top center/cover;
+    background: rgba(0, 0, 0, 0.1) url("bg-img/bg-16.jpg")no-repeat top center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -51,7 +45,7 @@
 }
 
 #Mensection-one #box-3::after {
-    background: rgba(0, 0, 0, 0.1) url("src/images/bg-img/bg-15.jpg")no-repeat top center/cover;
+    background: rgba(0, 0, 0, 0.1) url("bg-img/bg-15.jpg")no-repeat top center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -64,7 +58,6 @@
 }
 
 #Mensection-one .box .inner-box {
-    /* border: 3px solid green; */
     width: 85%;
     height: 220px;
     background-color: rgba(255, 255, 255, 0.842);
@@ -77,20 +70,17 @@
 }
 
 #Mensection-one .box .inner-box h1 {
-    /* border: 1px solid blue; */
     font-size: 40px;
     font-weight: 600;
 }
 
 #Mensection-one .box .inner-box h2 {
-    /* border: 1px solid red; */
     font-size: 35px;
     font-weight: 400;
     margin: 15px 0px;
 }
 
 #Mensection-one .box .inner-box a {
-    /* border: 1px solid yellow; */
     border-bottom: 2px solid tomato;
     text-decoration: none;
     color: tomato;
@@ -131,16 +121,13 @@
 /* #Womensection-two css */
 
 #mensection-two {
-    /* border: 2px solid red; */
     min-height: 130vh;
     width: 100%;
-    /* background-color: rgb(197, 255, 236); */
     padding-bottom: 55px;
     position: relative;
 }
 
 #mensection-two .heading {
-    /* border: 2px solid green; */
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -148,7 +135,6 @@
 }
 
 #mensection-two .heading h2 {
-    /* border: 2px solid red; */
     font-family: "Bree Serif", serif;
     font-size: 2rem;
     text-align: center;
@@ -161,7 +147,6 @@
     border: 1px solid tomato;
     border-radius: 1px;
     width: 130px;
-    /* margin: auto; */
     animation: linemove 3s ease;
 }
 
@@ -176,26 +161,21 @@
 }
 
 #mensection-two .shoe-container {
-    /* border: 2px solid red; */
     display: grid;
     justify-content: space-evenly;
     align-items: center;
     grid-template-columns: repeat(4, 300px);
-    /* grid-template-rows: repeat(2, 350px); */
     padding: 35px 40px;
     grid-row-gap: 50px;
-    /* padding-left: 300px; */
 }
 
 #mensection-two .shoe-container .shoe-group {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #mensection-two .shoe-container .shoe-item {
-    /* border: 2px solid black; */
     height: 280px;
     width: 270px;
     background-color: #efefef;
@@ -207,27 +187,23 @@
     align-items: center;
     padding: 25px;
     cursor: pointer;
-    /* overflow: hidden; */
     position: relative;
     overflow: hidden;
     transition: all 0.8s ease;
 }
 
 #mensection-two .shoe-container .shoe-item img {
-    /* border: 2px solid black; */
     width: 91%;
     height: 100%;
     transition: all 0.8s ease;
 }
 
 #mensection-two .shoe-group .shoe-item .social-icons {
-    /* border: 2px solid black; */
     position: absolute;
     bottom: 15px;
 }
 
 #mensection-two .shoe-group .shoe-item .social-icons a {
-    /* border: 1px solid #ccc; */
     border-radius: 50%;
     display: inline-flex;
     width: 37px;
@@ -238,7 +214,6 @@
     opacity: 0;
     transition: all 0.8s ease;
     background-color: white;
-    /* filter: invert(100%); */
 }
 
 #mensection-two .shoe-group .shoe-item .social-icons a:hover {
@@ -248,12 +223,10 @@
 
 
 #mensection-two .shoe-item:hover .shoe-item-img {
-    /* transform: scale(1.1); */
     transform: translateY(-30px);
 }
 
 #mensection-two .shoe-item:hover .social-icons a {
-    /* border: 4px solid green; */
     transform: translateY(-20px);
     opacity: 1;
 }
@@ -280,7 +253,6 @@
 /* #filter button CSS */
 
 #filter {
-    /* border: 1px solid black; */
     box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.4);
     border: none;
     border-radius: 10px;
@@ -289,8 +261,6 @@
     font-size: 16px;
     background-color: none;
     padding: 4px 8px;
-    /* transform: translate(71px, 120px); */
-    /* background-color: #a53939; */
     color: white;
     background: none;
     color: black;
@@ -302,10 +272,8 @@
 }
 
 #filter img {
-    /* border: 1px solid yellow; */
     width: 18px;
     height: 18px;
-    /* filter: invert(100%); */
     transition: all 0.2s ease;
 }
 
@@ -321,19 +289,11 @@
 /* .sidebar CSS */
 
 .sidebar {
-    /* border: 3px solid red; */
-    /* border: 1px solid black; */
-    /* border-radius: 12px; */
     border-top-right-radius: 45px;
     border-bottom-right-radius: 45px;
-    /* background-color: rgb(223, 218, 218); */
-    /* background-color: rgb(219, 255, 244); */
-    /* background: linear-gradient(to right, #C33764  , #1D2671); */
-    /* background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%); */
     width: 315px;
     height: 95vh;
     font-family: "Bree Serif", serif;
-    /* position: absolute; */
     position: sticky;
     left: 0px;
     top: 10px;
@@ -352,14 +312,12 @@
 
 /* change shoe-container CSS on click filter button */
 .filter-shoe {
-    /* background-color: yellow; */
     grid-template-columns: repeat(3, 300px) !important;
 }
 
 /* inside SideBar CSS */
 
 .cross {
-    /* border: 1px solid yellow; */
     width: 30px;
     height: 30px;
     padding: 6px;
@@ -387,7 +345,6 @@
 
 #rangebar {
     -webkit-appearance: none;
-    /* border: 2px solid green; */
     width: 100%;
     height: 10px;
     background: #e4e4e4;
@@ -403,9 +360,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    /* background: #664AFF; */
     background-color: white;
-    /* border: 1px solid #664AFF; */
     border: 5px solid #664AFF;
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1);
@@ -421,7 +376,6 @@
 }
 
 .sidebar .info {
-    /* border: 2px solid black; */
     font-family: "Jost", sans-serif;
     width: 100%;
     margin-top: 45px;
@@ -429,7 +383,6 @@
 }
 
 .sidebar .info .range-container {
-    /* border: 2px solid blue; */
     font-family: "Jost", sans-serif;
     display: flex;
     flex-direction: column;
@@ -444,7 +397,6 @@
 }
 
 .sidebar .info .price-range {
-    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 18px;
@@ -454,7 +406,6 @@
 }
 
 .sidebar .info .price-range span {
-    /* border: 2px solid yellow; */
     border: 1px solid #dddede;
     padding-left: 12px;
     color: #787a7c;
@@ -465,7 +416,6 @@
 }
 
 .sidebar .info .price-range span.range-min {
-    /* border: 1px solid red; */
     cursor: not-allowed;
 }
 
@@ -474,7 +424,6 @@
 }
 
 .sidebar .info input[type="number"] {
-    /* border: 1px solid green; */
     border: none;
     font-family: "Jost", sans-serif;
     width: 85%;
@@ -486,7 +435,6 @@
 }
 
 .sidebar .color-container {
-    /* border: 2px solid green; */
     margin-top: 28px;
 }
 
@@ -497,7 +445,6 @@
 }
 
 .sidebar .color-container .color-grid {
-    /* border: 2px solid red; */
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(6, 18px);

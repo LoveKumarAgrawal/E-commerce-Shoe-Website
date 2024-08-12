@@ -1,22 +1,17 @@
 #Womensection-one {
-    /* border: 2px solid red; */
     width: 100%;
     height: 94vh;
     position: relative;
-    /* background-color: rgb(248, 255, 236); */
 }
 
 #Womensection-one .bg-img {
-    /* border: 2px solid red; */
     background: url("/src/images/bg-img/bg-2.png")no-repeat top left/cover;
-    /* border: 2px solid red; */
     height: 100%;
     width: 100%;
     filter: drop-shadow(35px 0px 10px rgba(0, 0, 0, 0.15));
 }
 
 #Womensection-one .info {
-    /* border: 2px solid red; */
     font-family: "Jost", sans-serif;
     height: 100%;
     display: flex;
@@ -35,7 +30,6 @@
 }
 
 #Womensection-one .info h1 {
-    /* border: 2px solid red; */
     font-size: 3rem;
     letter-spacing: 2px;
     margin: 25px 0px;
@@ -56,7 +50,6 @@
 }
 
 .women-btn:hover {
-    /* background: rgba(28, 105, 84,1); */
     background-color: tomato;
     color: white;
 }
@@ -84,13 +77,11 @@
 #Womensection-two {
     min-height: 130vh;
     width: 100%;
-    /* background-color: rgb(197, 255, 236); */
     padding-bottom: 55px;
     position: relative;
 }
 
 #Womensection-two .heading {
-    /* border: 2px solid green; */
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -98,7 +89,6 @@
 }
 
 #Womensection-two .heading h2 {
-    /* border: 2px solid yellow; */
     font-family: "Bree Serif", serif;
     font-size: 2rem;
     text-align: center;
@@ -111,7 +101,6 @@
     border: 1px solid tomato;
     border-radius: 1px;
     width: 130px;
-    /* margin: auto; */
     animation: linemove 3s ease;
 }
 
@@ -126,7 +115,6 @@
 }
 
 #Womensection-two .shoe-container {
-    /* border: 2px solid red; */
     display: grid;
     justify-content: space-evenly;
     align-items: center;
@@ -137,14 +125,12 @@
 }
 
 #Womensection-two .shoe-container .shoe-group {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #Womensection-two .shoe-container .shoe-item {
-    /* border: 2px solid black; */
     height: 280px;
     width: 270px;
     background-color: #efefef;
@@ -156,27 +142,23 @@
     align-items: center;
     padding: 25px;
     cursor: pointer;
-    /* overflow: hidden; */
     position: relative;
     overflow: hidden;
     transition: all 0.8s ease;
 }
 
 #Womensection-two .shoe-container .shoe-item img {
-    /* border: 2px solid black; */
     width: 91%;
     height: 100%;
     transition: all 0.8s ease;
 }
 
 #Womensection-two .shoe-group .shoe-item .social-icons {
-    /* border: 2px solid black; */
     position: absolute;
     bottom: 15px;
 }
 
 #Womensection-two .shoe-group .shoe-item .social-icons a {
-    /* border: 1px solid #ccc; */
     border-radius: 50%;
     display: inline-flex;
     width: 37px;
@@ -188,7 +170,6 @@
     transform: translateY(20px);
     transition: all 0.8s ease;
     background-color: white;
-    /* filter: invert(100%); */
 }
 
 #Womensection-two .shoe-group .shoe-item .social-icons a:hover {
@@ -198,8 +179,6 @@
 
 
 #Womensection-two .shoe-item:hover .shoe-item-img {
-    /* transform: scale(1.1); */
-    /* transform: rotateY(360deg); */
     animation: hover_shoe_ani 0.8s ease;
 }
 
@@ -214,7 +193,6 @@
 }
 
 #Womensection-two .shoe-item:hover .social-icons a {
-    /* border: 4px solid green; */
     transform: translateY(0px);
     opacity: 1;
 }
@@ -241,7 +219,6 @@
 /* #filter button CSS */
 
 #filter {
-    /* border: 1px solid black; */
     box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.4);
     border: none;
     border-radius: 10px;
@@ -250,8 +227,6 @@
     font-size: 16px;
     background-color: none;
     padding: 4px 8px;
-    /* transform: translate(71px, 120px); */
-    /* background-color: #a53939; */
     color: white;
     background: none;
     color: black;
@@ -263,10 +238,8 @@
 }
 
 #filter img {
-    /* border: 1px solid yellow; */
     width: 18px;
     height: 18px;
-    /* filter: invert(100%); */
     transition: all 0.2s ease;
 }
 
@@ -282,19 +255,11 @@
 /* .sidebar CSS */
 
 .sidebar {
-    /* border: 3px solid red; */
-    /* border: 1px solid black; */
-    /* border-radius: 12px; */
     border-top-right-radius: 45px;
     border-bottom-right-radius: 45px;
-    /* background-color: rgb(223, 218, 218); */
-    /* background-color: rgb(219, 255, 244); */
-    /* background: linear-gradient(to right, #C33764  , #1D2671); */
-    /* background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%); */
     width: 315px;
     height: 95vh;
     font-family: "Bree Serif", serif;
-    /* position: absolute; */
     position: sticky;
     left: 0px;
     top: 10px;
@@ -313,14 +278,12 @@
 
 /* change shoe-container CSS on click filter button */
 .filter-shoe {
-    /* background-color: yellow; */
     grid-template-columns: repeat(3, 300px) !important;
 }
 
 /* inside SideBar CSS */
 
 .cross {
-    /* border: 1px solid yellow; */
     width: 30px;
     height: 30px;
     padding: 6px;
@@ -348,7 +311,6 @@
 
 #rangebar {
     -webkit-appearance: none;
-    /* border: 2px solid green; */
     width: 100%;
     height: 10px;
     background: #e4e4e4;
@@ -382,7 +344,6 @@
 }
 
 .sidebar .info {
-    /* border: 2px solid black; */
     font-family: "Jost", sans-serif;
     width: 100%;
     margin-top: 45px;
@@ -390,7 +351,6 @@
 }
 
 .sidebar .info .range-container {
-    /* border: 2px solid blue; */
     font-family: "Jost", sans-serif;
     display: flex;
     flex-direction: column;
@@ -405,7 +365,6 @@
 }
 
 .sidebar .info .price-range {
-    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 18px;
@@ -415,7 +374,6 @@
 }
 
 .sidebar .info .price-range span {
-    /* border: 2px solid yellow; */
     border: 1px solid #dddede;
     padding-left: 12px;
     color: #787a7c;
@@ -426,7 +384,6 @@
 }
 
 .sidebar .info .price-range span.range-min {
-    /* border: 1px solid red; */
     cursor: not-allowed;
 }
 
@@ -435,7 +392,6 @@
 }
 
 .sidebar .info input[type="number"] {
-    /* border: 1px solid green; */
     border: none;
     font-family: "Jost", sans-serif;
     width: 85%;
@@ -447,7 +403,6 @@
 }
 
 .sidebar .color-container {
-    /* border: 2px solid green; */
     margin-top: 28px;
 }
 
@@ -458,7 +413,6 @@
 }
 
 .sidebar .color-container .color-grid {
-    /* border: 2px solid red; */
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(6, 18px);
@@ -577,7 +531,6 @@
 }
 
 .sidebar .size-container {
-    /* border: 2px solid green; */
     margin-top: 28px;
 }
 
@@ -588,7 +541,6 @@
 }
 
 .sidebar .size-container .size {
-    /* border: 1px solid black; */
     font-family: "Jost", sans-serif;
     margin: 20px 0px;
     color: #787a7c;

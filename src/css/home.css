@@ -7,7 +7,6 @@
 #home .home-left {
     height: 100%;
     width: 50%;
-    /* background-color: pink; */
     padding: 90px;
     display: flex;
     justify-content: center;
@@ -17,7 +16,6 @@
 #home .home-right {
     height: 100%;
     width: 50%;
-    /* background-color: green; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +24,7 @@
 #home .home-right #home-img {
     height: 500px;
     width: 500px;
-    background: url("/src/images/shoes-img/home/3-a.png")no-repeat center center;
+    background: url("shoes-img/home/3-a.png")no-repeat center center;
     transform: rotate(33deg);
     background-size: 100%;
 }
@@ -86,7 +84,6 @@
 /* #shoe-category CSS */
 
 #shoe-category {
-    /* border: 2px solid black; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -134,7 +131,6 @@
 }
 
 #shoe-category .box button img {
-    /* border: 2px solid green; */
     width: 20px;
     position: relative;
     top: 5px;
@@ -142,15 +138,15 @@
 }
 
 #shoe-category #box-1 {
-    background: url("/src/images/shoe-category/men-shoe.jpg")no-repeat center center/cover;
+    background: url("shoe-category/men-shoe.jpg")no-repeat center center/cover;
 }
 
 #shoe-category #box-2 {
-    background: url("/src/images/shoe-category/women-shoe.jpg")no-repeat center center/cover;
+    background: url("shoe-category/women-shoe.jpg")no-repeat center center/cover;
 }
 
 #shoe-category #box-3 {
-    background: url("/src/images/shoe-category/sports-shoe.jpg")no-repeat center center/cover;
+    background: url("shoe-category/sports-shoe.jpg")no-repeat center center/cover;
 }
 
 /* section-one CSS */
@@ -158,11 +154,9 @@
 #section-one {
     min-height: 130vh;
     width: 100%;
-    /* background-color: rgb(197, 255, 236); */
 }
 
 #section-one .heading {
-    /* border: 2px solid green; */
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -170,7 +164,6 @@
 }
 
 #section-one .heading h2 {
-    /* border: 2px solid red; */
     font-family: "Bree Serif", serif;
     font-size: 2rem;
     text-align: center;
@@ -183,8 +176,6 @@
     border: 1px solid tomato;
     border-radius: 1px;
     width: 130px;
-    /* margin: auto; */
-    /* transform: translateX(-800px); */
     animation: linemove 3s ease;
 }
 
@@ -229,27 +220,22 @@
     justify-content: center;
     align-items: center;
     padding: 25px;
-    /* cursor: pointer; */
-    /* overflow: hidden; */
     position: relative;
     transition: all 0.8s ease;
 }
 
 #section-one .shoe-container .shoe-item img {
-    /* border: 2px solid black; */
     width: 250px;
     height: 100%;
     transition: all 0.8s ease;
 }
 
 .shoe-group .shoe-item .social-icons {
-    /* border: 2px solid black; */
     position: absolute;
     bottom: 15px;
 }
 
 .shoe-group .shoe-item .social-icons a{
-    /* border: 1px solid #ccc; */
     border: none;
     border-radius: 50%;
     display: inline-flex;
@@ -262,7 +248,6 @@
     transition: all 0.8s ease;
     background-color: white;
     transform: translateY(20px);
-    /* filter: invert(100%); */
 }
 
 .shoe-group .shoe-item .social-icons a:hover {
@@ -276,7 +261,6 @@
 }
 
 .shoe-item:hover .social-icons a {
-    /* border: 4px solid green; */
     transform: translateY(0px);
     opacity: 1;
 }
@@ -304,9 +288,7 @@
 /* #choice CSS */
 
 #choice {
-    /* border: 3px solid blue; */
     width: 100%;
-    /* height: 75%; */
     display: grid;
     grid-template-columns: repeat(3, 420px);
     grid-template-rows: 460px;
@@ -315,7 +297,6 @@
 }
 
 #choice .box {
-    /* border: 1px solid black; */
     font-family: "Jost", sans-serif;
     position: relative;
     display: flex;
@@ -334,7 +315,6 @@
 }
 
 #choice .box .info {
-    /* border: 1px solid red; */
     position: absolute;
     bottom: 30px;
     text-align: center;
@@ -350,7 +330,6 @@
 }
 
 #choice .box .info a {
-    /* border: 1px solid yellow; */
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -384,7 +363,6 @@
 /* #offer css */
 
 #offer {
-    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -393,7 +371,6 @@
 }
 
 #offer .box {
-    /* border: 2px solid green; */
     width: 45%;
     height: 260px;
     font-family: "Jost", sans-serif;
@@ -437,7 +414,7 @@
 }
 
 #offer #box-1::after {
-    background: rgba(0, 0, 0, 0.4) url("../src/images/bg-img/bg-3.webp")no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0.4) url("bg-img/bg-3.webp")no-repeat center center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -450,7 +427,7 @@
 }
 
 #offer #box-2::after {
-    background: rgba(0, 0, 0, 0.4) url("../src/images/bg-img/bg-4.jpg")no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0.4) url("bg-img/bg-4.jpg")no-repeat center center/cover;
     background-blend-mode: darken;
     content: "";
     position: absolute;
@@ -483,7 +460,7 @@
 #section-two .bg-img {
     height: 100%;
     width: 100%;
-    background: url("/src/images/bg-img/bg-1.webp")no-repeat bottom center/cover;
+    background: url("bg-img/bg-1.webp")no-repeat bottom center/cover;
     transition: all 2s ease;
 }
 
@@ -537,7 +514,6 @@
 
 /* instagram css */
 #instra-container {
-    /* border: 3px solid green; */
     width: 100%;
     height: 75%;
 }
@@ -547,7 +523,6 @@
 }
 
 #instra-container .heading h2 {
-    /* border: 2px solid red; */
     font-family: "Jost", sans-serif;
     font-size: 2rem;
     text-align: center;
@@ -613,10 +588,8 @@
 }
 
 #instra .box .bg-upper img {
-    /* border: 1px solid red; */
     width: 60px;
     height: 60px;
-    /* padding: 3px; */
     filter: invert(100%);
     cursor: pointer;
     position: relative;
@@ -624,7 +597,6 @@
 }
 
 #instra .box .bg-upper img:hover {
-    /* filter: invert(80%); */
     transform: translateY(-10px);
 }
 

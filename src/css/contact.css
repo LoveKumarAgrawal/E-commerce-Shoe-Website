@@ -3,7 +3,6 @@
 #section-three {
     height: 85%;
     width: 100%;
-    /* background-color: antiquewhite; */
 }
 
 #section-three .heading {
@@ -26,7 +25,6 @@
 }
 
 #section-three .team-container {
-    /* border: 4px solid red; */
     display: grid;
     justify-content:space-around;
     align-items: center;
@@ -35,7 +33,6 @@
 }
 
 .team-container .box {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,24 +40,19 @@
 }
 
 .team-container .box .team {
-    /* border: 2px solid black; */
     height: 260px;
     width: 260px;
     background-color: #efefef;
     margin: 0px 15px;
-    /* border-radius: 20px; */
     box-shadow: 7px 10px 9px #00000014;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 40px; */
-    /* cursor: pointer; */
     transition: all 0.8s ease;
     overflow: hidden;
 }
 
 #section-three .team-container .team img {
-    /* border: 2px solid black; */
     width: 100%;
     height: 100%;
     transition: all 0.8s ease;
@@ -86,15 +78,12 @@
 }
 
 .team-container .box .social-icons {
-    /* border: 2px solid black; */
     position: absolute;
     bottom: 90px;
     display: flex;
 }
 
 .team-container .box .social-icons a {
-
-    /* border: 1px solid #ccc; */
     border: 0.5px solid black;
     border-radius: 50%;
     display:inline-flex;
@@ -123,15 +112,9 @@
 .team-container .box:hover .social-icons a {
     opacity: 1;
 }
-/* 
-.team-container .box .social-icons a img {
-    filter: invert(100%);
-} */
-
 /* #contact CSS */
 
 #contact {
-    /* border: 4px solid green; */
     width: 100%;
     height: 90vh;
     display: flex;
@@ -139,7 +122,6 @@
 }
 
 #contact .form {
-    /* border: 2px solid black; */
     height: 100%;
     width: 50%;
     display: flex;
@@ -156,7 +138,6 @@
 }
 
 #contact .form h2 {
-    /* border: 2px solid yellow; */
     font-family: "Jost", sans-serif;
     font-weight: 400;
     line-height: 40px;
@@ -167,7 +148,6 @@
 }
 
 #contact .form .form-input {
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
 }
@@ -214,14 +194,12 @@
 }
 
 #contact .video {
-    /* border: 2px solid black; */
     height: 100%;
     width: 50%;
     padding-right: 100px;
 }
 
 #contact video {
-    /* border: 1px solid red; */
     height: 58%;
     width: 95%;
     border-radius: 35px;
@@ -232,7 +210,6 @@
 #section-three {
     height: 85%;
     width: 100%;
-    /* background-color: antiquewhite; */
 }
 
 #section-three .heading {
@@ -255,7 +232,6 @@
 }
 
 #section-three .team-container {
-    /* border: 4px solid red; */
     display: grid;
     justify-content:space-around;
     align-items: center;
@@ -264,7 +240,6 @@
 }
 
 .team-container .box {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,24 +247,19 @@
 }
 
 .team-container .box .team {
-    /* border: 2px solid black; */
     height: 260px;
     width: 260px;
     background-color: #efefef;
     margin: 0px 15px;
-    /* border-radius: 20px; */
     box-shadow: 7px 10px 9px #00000014;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 40px; */
-    /* cursor: pointer; */
     transition: all 0.8s ease;
     overflow: hidden;
 }
 
 #section-three .team-container .team img {
-    /* border: 2px solid black; */
     width: 100%;
     height: 100%;
     transition: all 0.8s ease;
@@ -315,7 +285,6 @@
 }
 
 .team-container .box .social-icons {
-    /* border: 2px solid black; */
     position: absolute;
     bottom: 90px;
     display: flex;
@@ -323,7 +292,6 @@
 
 .team-container .box .social-icons a {
 
-    /* border: 1px solid #ccc; */
     border: 0.5px solid black;
     border-radius: 50%;
     display:inline-flex;
@@ -352,15 +320,10 @@
 .team-container .box:hover .social-icons a {
     opacity: 1;
 }
-/* 
-.team-container .box .social-icons a img {
-    filter: invert(100%);
-} */
 
 /* #contact CSS */
 
 #contact {
-    /* border: 4px solid green; */
     width: 100%;
     height: 90vh;
     display: flex;
@@ -368,7 +331,6 @@
 }
 
 #contact .form {
-    /* border: 2px solid black; */
     height: 100%;
     width: 50%;
     display: flex;
@@ -385,7 +347,6 @@
 }
 
 #contact .form h2 {
-    /* border: 2px solid yellow; */
     font-family: "Jost", sans-serif;
     font-weight: 400;
     line-height: 40px;
@@ -396,7 +357,6 @@
 }
 
 #contact .form .form-input {
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
 }
@@ -443,14 +403,12 @@
 }
 
 #contact .video {
-    /* border: 2px solid black; */
     height: 100%;
     width: 50%;
     padding-right: 100px;
 }
 
 #contact video {
-    /* border: 1px solid red; */
     height: 58%;
     width: 95%;
     border-radius: 35px;

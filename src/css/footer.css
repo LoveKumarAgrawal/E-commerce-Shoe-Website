@@ -10,15 +10,10 @@ footer {
 }
 
 footer .colm {
-    /* border: 2px solid black; */
     font-family: "Jost", sans-serif;
     display: flex;
     flex-direction: column;
 }
-
-/* footer .first-col {
-    border: 2px solid red;
-} */
 
 footer .first-col h3 {
     font-size: 2rem;
@@ -64,10 +59,8 @@ footer .second-col p {
 }
 
 footer .second-col .social-icons {
-    /* border: 2px solid black; */
     display: flex;
     justify-content: flex-end;
-
     margin-top: 15px;
 }
 
@@ -82,13 +75,10 @@ footer .second-col .social-icons a {
 }
 
  #fb img{
-    /* border: 1px solid black; */
     padding: 3px;
 }
 
 footer .second-col .social-icons a img {
-    /* width: 25px; */
-    /* height: 25px; */
     filter: invert(100%);
 }
 
