@@ -69,11 +69,11 @@ function Women() {
 
             <div id="Womensection-two">
                 <button id="filter" onClick={toggleSidebar} style={{ display: sidebarOpen ? 'inline' : 'none' }}>
-                    Filter <img src="/src/images/logo/down.svg" alt=""  />
+                    Filter <img src="/logo/down.svg" alt=""  />
                 </button>
 
                 <div className={`sidebar ${sidebarOpen ? 'sidebarGo' : ''}`}>
-                    <img className="cross cross-ani" src="/src/images/logo/cross.svg" alt="" width="17px" onClick={toggleSidebar} />
+                    <img className="cross cross-ani" src="/logo/cross.svg" alt="" width="17px" onClick={toggleSidebar} />
                     <div className="info">
                         <div className="range-container">
                             <h3>Price</h3>
@@ -114,13 +114,13 @@ function Women() {
                                         <img className="shoe-item-img" src={shoe.image.shoe1} alt={shoe.name} />
                                         <div className="social-icons">
                                             <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                                <img className="icon" src="/src/images/social-icon-img/menu.svg" alt="" />
+                                                <img className="icon" src="/social-icon-img/menu.svg" alt="" />
                                             </a>
                                             <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                                <img className="icon" src="/src/images/social-icon-img/search.svg" alt="" />
+                                                <img className="icon" src="/social-icon-img/search.svg" alt="" />
                                             </a>
                                             <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                                <img className="icon" src="/src/images/social-icon-img/like.svg" alt="" />
+                                                <img className="icon" src="/social-icon-img/like.svg" alt="" />
                                             </a>
                                         </div>
                                     </div>

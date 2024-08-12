@@ -97,17 +97,17 @@ function Contact() {
       </form>
       {/* <div id="contact-service">
         <div className="box" id="box-1">
-            <img src="src/images/logo/address.svg" alt=""/>
+            <img src="logo/address.svg" alt=""/>
             <h3>Address</h3>
             <h4>GLA University, Mathura (281004)</h4>
         </div>
         <div className="box" id="box-2">
-            <img src="src/images/logo/phone.svg" alt=""/>
+            <img src="logo/phone.svg" alt=""/>
             <h3>Phone Number</h3>
             <h4>+919528300525</h4>
         </div>
         <div className="box" id="box-3">
-            <img src="src/images/logo/email.svg" alt=""/>
+            <img src="logo/email.svg" alt=""/>
             <h3>Email US</h3>
             <h4>shivamsoni8445@gmail.com</h4>
         </div>

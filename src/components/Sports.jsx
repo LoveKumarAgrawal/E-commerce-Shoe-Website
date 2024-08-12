@@ -59,7 +59,7 @@ function Sports() {
                         <div  className="name">
                             <h2>Hiking Shoes</h2>
                         </div>
-                        <img src="src/images/bg-img/bg-20.webp" alt="" />
+                        <img src="bg-img/bg-20.webp" alt="" />
                     </a>
                 </div>
                 <div  className="box" id="box-2">
@@ -67,7 +67,7 @@ function Sports() {
                         <div  className="name">
                             <h2>Running Shoes</h2>
                         </div>
-                        <img src="src/images/bg-img/bg-21.webp" alt="" />
+                        <img src="bg-img/bg-21.webp" alt="" />
                     </a>
                 </div>
                 <div  className="box" id="box-3">
@@ -75,7 +75,7 @@ function Sports() {
                         <div  className="name">
                             <h2>Soccer Shoes</h2>
                         </div>
-                        <img src="src/images/bg-img/bg-22.webp" alt="" />
+                        <img src="bg-img/bg-22.webp" alt="" />
                     </a>
                 </div>
                 <div  className="box" id="box-4">
@@ -83,16 +83,16 @@ function Sports() {
                         <div  className="name">
                             <h2>Tennis Shoes</h2>
                         </div>
-                        <img src="src/images/bg-img/bg-23.webp" alt="" />
+                        <img src="bg-img/bg-23.webp" alt="" />
                     </a>
                 </div>
             </div>
             <div id="sport-section2">
                 <button id="filter" onClick={toggleSidebar} style={{ display: sidebarOpen ? 'inline' : 'none' }}>Filter
-                    <img src="src/images/logo/down.svg" alt="" />
+                    <img src="logo/down.svg" alt="" />
                 </button>
                 <div className={`sidebar ${sidebarOpen ? 'sidebarGo' : ''}`}>
-                <img className="cross cross-ani" src="/src/images/logo/cross.svg" alt="" width="17px" onClick={toggleSidebar} />
+                <img className="cross cross-ani" src="/logo/cross.svg" alt="" width="17px" onClick={toggleSidebar} />
                     <div  className="info">
                         <div  className="range-container">
                             <h3>Price</h3>
@@ -130,13 +130,13 @@ function Sports() {
                                     <img className="shoe-item-img" src={shoe.image.shoe1} alt={shoe.name} />
                                     <div className="social-icons">
                                         <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                            <img className="icon" src="/src/images/social-icon-img/menu.svg" alt="" />
+                                            <img className="icon" src="/social-icon-img/menu.svg" alt="" />
                                         </a>
                                         <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                            <img className="icon" src="/src/images/social-icon-img/search.svg" alt="" />
+                                            <img className="icon" src="/social-icon-img/search.svg" alt="" />
                                         </a>
                                         <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                            <img className="icon" src="/src/images/social-icon-img/like.svg" alt="" />
+                                            <img className="icon" src="/social-icon-img/like.svg" alt="" />
                                         </a>
                                     </div>
                                 </div>

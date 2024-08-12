@@ -5,7 +5,7 @@
 }
 
 #Womensection-one .bg-img {
-    background: url("/src/images/bg-img/bg-2.png")no-repeat top left/cover;
+    background: url("/bg-img/bg-2.png")no-repeat top left/cover;
     height: 100%;
     width: 100%;
     filter: drop-shadow(35px 0px 10px rgba(0, 0, 0, 0.15));

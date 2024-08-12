@@ -43,22 +43,22 @@ function Footer() {
                     <p>Address: GLA University Mathura, 281004</p>
                     <div className="social-icons">
                         <a href="#" className="icon">
-                            <img src="/src/images/social-icon-img/twitter.svg" alt="" />
+                            <img src="/social-icon-img/twitter.svg" alt="" />
                         </a>
                         <a href="#" className="icon" id='fb'>
-                            <img src="/src/images/social-icon-img/facebook-f.svg" alt="" />
+                            <img src="/social-icon-img/facebook-f.svg" alt="" />
                         </a>
                         <a href="#" className="icon">
-                            <img src="/src/images/social-icon-img/youtube.svg" alt="" />
+                            <img src="/social-icon-img/youtube.svg" alt="" />
                         </a>
                         <a href="#" className="icon">
-                            <img src="/src/images/social-icon-img/instagram.svg" alt="" />
+                            <img src="/social-icon-img/instagram.svg" alt="" />
                         </a>
                         <a href="#" className="icon">
-                            <img src="/src/images/social-icon-img/google-plus-g.svg" alt="" />
+                            <img src="/social-icon-img/google-plus-g.svg" alt="" />
                         </a>
                         <a href="#" className="icon">
-                            <img src="/src/images/social-icon-img/github.svg" alt="" />
+                            <img src="/social-icon-img/github.svg" alt="" />
                         </a>
                     </div>
                 </div>

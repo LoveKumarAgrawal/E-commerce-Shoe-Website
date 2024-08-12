@@ -28,7 +28,7 @@ function Nav() {
                     <div className="left-nav">
                         <div className="logo">
                             <h3>ShoeSavvy</h3>
-                            <img src="/src/images/logo/logo.png" alt="" />
+                            <img src="/logo/logo.png" alt="" />
                         </div>
                     </div>
                     <ul>
@@ -59,7 +59,7 @@ function Nav() {
                         })} to="/contact">Contact</NavLink></li>
                     </ul>
                     {authStatus ? <div className="right-nav">
-                    <Link to={'/addtocart'}><img src="/src/images/logo/shopping.svg" id='cartlogo' alt=""/></Link>    
+                    <Link to={'/addtocart'}><img src="/logo/shopping.svg" id='cartlogo' alt=""/></Link>    
                     <button onClick={handleLogout} className='logoutbtn'>Logout</button>
                     </div> : <div className="right-nav">
                         <ul>
@@ -69,8 +69,8 @@ function Nav() {
                             <li><Link to={{ pathname: '/signup', search: '?form=login' }} className='signuplink'>Login</Link></li>
                         </ul>
                         </div>}
-                        {/* <img src="/src/images/logo/search.svg" alt=""/>
-                <img src="/src/images/logo/shopping.svg" alt=""/> */}
+                        {/* <img src="/logo/search.svg" alt=""/>
+                <img src="/logo/shopping.svg" alt=""/> */}
                 </nav>
             </div>
             

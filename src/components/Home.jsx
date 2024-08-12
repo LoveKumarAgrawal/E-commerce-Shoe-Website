@@ -29,19 +29,19 @@ function Home() {
                 <div className="box" id="box-1">
                     <h3>men collections</h3>
                     <Link to={'/men'} className='navlink'>
-                        <button>Explore All <img src="shoe-category/arrow-right.svg" alt="" /></button>
+                        <button>Explore All <img src="/shoe-category/arrow-right.svg" alt="" /></button>
                     </Link>
                 </div>
                 <div className="box" id="box-2">
                     <h3>women collections</h3>
                     <Link to={'/women'} className='navlink'>
-                        <button>Explore All <img src="shoe-category/arrow-right.svg" alt="" /></button>
+                        <button>Explore All <img src="/shoe-category/arrow-right.svg" alt="" /></button>
                     </Link>
                 </div>
                 <div className="box" id="box-3">
                     <h3>sports collections</h3>
                     <Link to={'/sports'} className='navlink'>
-                        <button>Explore All <img src="shoe-category/arrow-right.svg" alt="" /></button>
+                        <button>Explore All <img src="/shoe-category/arrow-right.svg" alt="" /></button>
                     </Link>
                 </div>
             </div>
@@ -58,13 +58,13 @@ function Home() {
                                     <img className="shoe-item-img" src={shoe.image.shoe1} alt={shoe.name} />
                                     <div className="social-icons">
                                         <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                            <img className="icon" src="/src/images/social-icon-img/menu.svg" alt="" />
+                                            <img className="icon" src="/social-icon-img/menu.svg" alt="" />
                                         </a>
                                         <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                            <img className="icon" src="/src/images/social-icon-img/search.svg" alt="" />
+                                            <img className="icon" src="/social-icon-img/search.svg" alt="" />
                                         </a>
                                         <a href="#" className="icon" onClick={(e) => e.preventDefault()}>
-                                            <img className="icon" src="/src/images/social-icon-img/like.svg" alt="" />
+                                            <img className="icon" src="/social-icon-img/like.svg" alt="" />
                                         </a>
                                     </div>
                                 </div>

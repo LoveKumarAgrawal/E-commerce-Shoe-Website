@@ -5,7 +5,7 @@ import MenProduct from './Men/MenProduct';
 import WomenProduct from './Women/WomenProducts';
 import SportsProduct from './Sports/SportsProducts';
 import { v4 as uuidv4 } from 'uuid'
-import { databases, account } from '../appwrite/appwriteConfig'
+import { databases } from '../appwrite/appwriteConfig'
 import '../css/shoelisting.css'
 import { useSelector } from 'react-redux';
 import conf from '../conf/conf.js';
