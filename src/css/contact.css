@@ -233,9 +233,10 @@
 
 #section-three .team-container {
     display: grid;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
-    grid-template-columns: repeat(4, 290px);
+    grid-template-columns: repeat(2, 290px);
+    grid-column-gap: 40px;
     padding: 35px 50px;
 }
 
